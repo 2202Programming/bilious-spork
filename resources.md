@@ -1,3 +1,3 @@
-#Resources
+B#Resources
 
-(Git Flow Overview)[https://guides.github.com/introduction/flow/]
+[Git Flow Overview](https://guides.github.com/introduction/flow/)
