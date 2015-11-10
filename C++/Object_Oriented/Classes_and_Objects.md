@@ -49,6 +49,8 @@ class Box
 };
 
 ```
+
+```
 int main( )
 {
    Box Box1;        // Declare Box1 of type Box
@@ -74,6 +76,7 @@ int main( )
    return 0;
 }
 ```
+
 When the above code is compiled and executed, it produces the following result:
 
 ```
