@@ -5,8 +5,20 @@
 
 using namespace std;
 
+/*IN	-> rNum = prints out the current element number it is at in the form 0x00000000
+		-> s = The current string in each row should be size <= 16
+		-> max = only used if the row is incomplete like their is only 5 elements left should == s.size - 1
+  OUT	-> No direct output only displays the processed values to the screen in one central way
+*/
 void printRow(int rNum, string s, int max=16);
+/*
+IN	-> Any value T I think this should work for any non floaty number includeing chars
+OUT -> the value of I returned in the Hexadecimal Base in the 0x00000000 form
+*/
 template<typename T>string int_to_hex(T i);
+/*
+IN	-> same as before but designed 
+*/
 string hexInt(int i);
 
 int main()
