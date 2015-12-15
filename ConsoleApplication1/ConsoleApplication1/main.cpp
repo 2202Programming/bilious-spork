@@ -8,12 +8,20 @@ double ftoC(double f);
 void tempRunner();
 void switchRunner();
 void switcher(int* a, int* b);
+void tableRunner();
 
 int main() {
 	while (true) {
-		switchRunner();
+		tableRunner();
 	}
 	return 0;
+}
+
+void tableRunner() {
+	CelcciusTable table;
+	double x, y, z;
+	cin >> x >> y >> z;
+	table.makeTable(x, y, z);
 }
 
 void tempRunner() {
