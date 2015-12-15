@@ -5,7 +5,7 @@ This is the first hands on c++ our class is going to be able to do it contains m
 
 	- Create A program that Converts the Celcius to Farenheight
 	- Create A program based off of davids Switcher Class
-	- Create an advanced Class the when given the command makeTable(...) Generates a talbe of values starting at one and advanceing to an endpoint at certain interval
+	- Create an advanced Class the when given the command makeTable(...) Generates a table of values starting at one and advanceing to an endpoint at certain interval
 
 ### Source If you want to use it is also availble to copy on the server
 
