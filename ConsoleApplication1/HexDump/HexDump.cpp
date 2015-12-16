@@ -17,7 +17,7 @@ OUT -> the value of I returned in the Hexadecimal Base in the 0x00000000 form
 */
 template<typename T>string int_to_hex(T i);
 /*
-IN	-> same as before but designed 
+IN	-> same as before but designed in the form 0x00
 */
 string hexInt(int i);
 
@@ -27,19 +27,19 @@ int main()
 	string text;
 	ifstream mfile;
 	mfile.open("HexDump.cpp");
-	if (mfile.is_open()) {
-		while ( getline(mfile, line)) {
+	if (mfile.is_open()) {	/* Program only runs if it can open the file */
+		while ( getline(mfile, line)) {  /* Concatenates all the smaller lines into a very large string that is extreamly inneficient */
 			text += line;
 		}
-		mfile.close();
+		mfile.close();  /* We have the string so we can close the file beacause we dont need it anymore */
 		int i;
-		for (i = 0; i < text.size()-16; i += 16) {
+		for (i = 0; i < text.size()-16; i += 16) {  /* Guts makes substrings if you can, trying to  */
 			string s = text.substr(i,16);
 			printRow(i, s);
 		}
 		int temp = i;
 		i = text.size() - i;
-		if (i > 0) {
+		if (i > 0) { /* Handles the remainder of the files if we cant get a full row of 16 */
 			string s = text.substr(temp, i);
 			printRow(i, s, i);
 		}
@@ -57,16 +57,16 @@ void printRow(int rNum,string s,int max) {
 	}
 
 	cout << num << "  ";
-	//Generates Hex Values
-	for (int i = 0; i < max ; i++) {
-		int temp = s.at(i);
-		string hex = hexInt(temp);
+	//Generates Hex Values 
+	for (int i = 0; i < max ; i++) { /* Looping is controlled internally */
+		int temp = s.at(i);		/* get the char at the current location in the loop */
+		string hex = hexInt(temp);  /* Translates int to hex */
 		cout << hex << " ";
-		if (i == 7) {
+		if (i == 7) {  /* Enters an extra space in the interior of the loop  */
 			cout << " ";
 		}
 	}
-
+	//Prints translated ascii values
 	cout <<"|"<< s << "|";
 	cout << endl;
 }
