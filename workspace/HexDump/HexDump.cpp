@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-
+//I HATE TAXES
 using namespace std;
 
 /*IN	-> rNum = prints out the current element number it is at in the form 0x00000000
@@ -76,6 +76,7 @@ template<typename T>string int_to_hex(T i){
 	stream << setfill('0') << setw(sizeof(T) * 2) << hex << i;
 	return stream.str();
 }
+
 string hexInt(int i) {
 	stringstream stream;
 	stream << setfill('0')<< setw(2) << hex << i;
