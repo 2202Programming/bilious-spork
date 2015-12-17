@@ -9,7 +9,10 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include <string>
+#include <iostream>
 
 
+//Self Made Classes
 
-// TODO: reference additional headers your program requires here
+#include "nstack.h"
