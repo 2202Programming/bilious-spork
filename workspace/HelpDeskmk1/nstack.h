@@ -4,11 +4,14 @@ using namespace std;
 
 
 struct node {
-	int value;
+	string value;
 	node* parent;
 
 	node(int val) {
 		value = val;
+	}
+	node() {
+		value = "-999";
 	}
 };
 
@@ -21,8 +24,10 @@ public:
 	nstack();
 	~nstack();
 
-	void push(node* n);
-	node* pop();
+	void push(string val);
+	node pop();
 	node* top();
+
+	bool isEmpty();
 };
 

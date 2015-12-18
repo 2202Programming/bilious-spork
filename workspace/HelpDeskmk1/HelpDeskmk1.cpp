@@ -9,16 +9,9 @@ using namespace std;
 int main()
 {
 	nstack stack = nstack();
-	node* bob = &node(1);
-	node* joe = &node(2);
+	int maxTime;
+	cin >> maxTime;
 
-	cout << bob->value << endl;
-
-	stack.push(bob);
-	stack.push(joe);
-
-
-	cout << stack.pop()->value << stack.pop()->value << endl;
 
 
 	while (true){}

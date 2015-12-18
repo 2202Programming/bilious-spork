@@ -14,21 +14,34 @@ nstack::~nstack()
 {
 }
 
-void nstack::push(node * n)
+void nstack::push(string val)
 {
-	root->parent = n;
+	node *n = new node();   // create new Node
+	n->value = val;             // set value
+	n->parent = root;         // make the node point to the next node.
+							//  If the list is empty, this is NULL, so the end of the list --> OK
 	root = n;
-	
 }
 
-node * nstack::pop()
+node nstack::pop()
 {
-	node* temp = root;
+	node *n = root;
+	node ret = *n;
+
 	root = root->parent;
-	return temp;
+	delete n;
+	return ret;
+
 }
 
 node * nstack::top()
 {
 	return root;
+}
+
+bool nstack::isEmpty() {
+	if (root == NULL) {
+		return true;
+	}
+	return false;
 }
