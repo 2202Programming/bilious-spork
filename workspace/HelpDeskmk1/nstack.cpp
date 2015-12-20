@@ -5,7 +5,7 @@
 nstack::nstack()
 {
 	if (root == NULL) {
-		root = &node(-999);
+		root = &node(-999, "NULL", -999, -999);
 	}
 }
 
@@ -14,11 +14,10 @@ nstack::~nstack()
 {
 }
 
-void nstack::push(string val)
+void nstack::push(int s, string ne, int c, int w)
 {
-	node *n = new node();   // create new Node
-	n->value = val;             // set value
-	n->parent = root;         // make the node point to the next node.
+	node *n = new node(s, ne, c, w);   // create new Node
+	n->parent = root;		// make the node point to the next node.
 							//  If the list is empty, this is NULL, so the end of the list --> OK
 	root = n;
 }
