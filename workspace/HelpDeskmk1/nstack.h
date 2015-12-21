@@ -33,6 +33,7 @@ public:
 	~nstack();
 
 	void push(int s, string ne, int c, int w);
+	void nstack::push(node *x);
 	node pop();
 	node* top();
 

@@ -22,6 +22,11 @@ void nstack::push(int s, string ne, int c, int w)
 	root = n;
 }
 
+void nstack::push(node *x) {
+	x->parent = root;
+	root = x;
+}
+
 node nstack::pop()
 {
 	node *n = root;

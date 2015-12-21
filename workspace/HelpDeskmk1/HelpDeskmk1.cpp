@@ -26,9 +26,14 @@ int main()
 
 	bool helping = false;
 	node* current = new node();
+	nstack sideStack = nstack();
+	int timeRemaining;
 	
 	for (int i = 0; i < maxTime; i++) {
-		if (!helping && stack.top()->start == i) {
+
+		cout << "Time ", i, ", ";
+
+		if (!helping && stack.top()->start == i) { /* Not Currently Helping Anyone*/
 			current = &stack.pop();
 			helping = true;
 			string logEntry = "Time " + i;
@@ -38,7 +43,22 @@ int main()
 			log = logEntry + log;
 		}
 		else if (helping && stack.top()->start == i) {
-
+			if (stack.top()->course < current->course) {
+				node* temp = current;
+				current = &stack.pop();
+				sideStack.push(temp);
+				timeRemaining = current->work;
+			}
+			else {
+				stack.pop();
+			}
+		}
+		else if (helping) {
+			timeRemaining--;
+		}
+		else if (true){}
+		else {
+			cout << "IDLE";
 		}
 	}
 
