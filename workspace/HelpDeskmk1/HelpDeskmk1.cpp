@@ -31,7 +31,7 @@ int main()
 	
 	for (int i = 0; i < maxTime; i++) {
 
-		cout << "Time ", i, ", ";
+		cout << "Time ", (int)i, ", ";
 
 		if (!helping && stack.top()->start == i) { /* Not Currently Helping Anyone*/
 			current = &stack.pop();
@@ -60,6 +60,7 @@ int main()
 		else {
 			cout << "IDLE";
 		}
+		cout << "\r\n";
 	}
 
 	while (true){}
