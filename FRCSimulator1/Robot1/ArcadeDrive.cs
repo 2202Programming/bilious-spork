@@ -1,0 +1,75 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using WPILib;
+using WPILib.SmartDashboard;
+
+
+namespace Robot1
+{
+     public struct Global
+    {
+        public const int FLP = 0;
+        public const int FRP = 1;
+        public const int BLP = 2;
+        public const int BRP = 3;
+
+        public const int JOYSTICK_PIN = 0;
+    }
+
+    class ArcadeDrive
+    {
+        Joystick stick;
+        Spark frontLeft, frontRight, backLeft, backRight;
+
+        public ArcadeDrive()
+        {
+
+            stick = new Joystick(Global.JOYSTICK_PIN);
+
+            frontRight = new Spark(Global.FRP);
+            frontLeft = new Spark(Global.FLP);
+            backLeft = new Spark(Global.BLP);
+            backRight = new Spark(Global.BRP);
+            Stop();
+
+        }
+
+        public void ActivateMotors(double right, double left)
+        {
+            frontLeft.Set(left);
+            frontRight.Set(right);
+            backLeft.Set(left);
+            backRight.Set(right);
+        }
+
+        public void Stop()
+        {
+            ActivateMotors(0, 0);
+        }
+
+        /// <summary>
+        /// Arcade Drive Runner
+        /// </summary>
+        public void RunArcadeDrive()
+        {
+            //Gets the two motors from the current stick
+            double x = stick.GetAxis(Joystick.AxisType.X);
+            double y = stick.GetAxis(Joystick.AxisType.Y);
+
+            //Deadsticking the two axises
+            if (Math.Abs(x) < .1) x = 0;
+            if (Math.Abs(y) < .1) y = 0;
+
+            //Shortsticking
+            y *= .8;
+
+            //Driveing Motors
+            ActivateMotors(x, y);
+        }
+
+    }
+}
