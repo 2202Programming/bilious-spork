@@ -12,9 +12,16 @@ namespace Robot1
 {
      public struct Global
     {
-        public const int FLP = 0;
+
+        /*
+        	const static int frontLeftChannel = 2;
+	const static int rearLeftChannel = 4;
+	const static int frontRightChannel = 1;
+	const static int rearRightChannel = 3;
+        */
+        public const int FLP = 2;
         public const int FRP = 1;
-        public const int BLP = 2;
+        public const int BLP = 4;
         public const int BRP = 3;
 
         public const int JOYSTICK_PIN = 0;
@@ -23,17 +30,19 @@ namespace Robot1
     class ArcadeDrive
     {
         Joystick stick;
-        Spark frontLeft, frontRight, backLeft, backRight;
+        Talon frontLeft, frontRight, backLeft, backRight;
+        Timer t;
 
         public ArcadeDrive()
         {
+            t = new Timer();
 
             stick = new Joystick(Global.JOYSTICK_PIN);
 
-            frontRight = new Spark(Global.FRP);
-            frontLeft = new Spark(Global.FLP);
-            backLeft = new Spark(Global.BLP);
-            backRight = new Spark(Global.BRP);
+            frontRight = new Talon(Global.FRP);
+            frontLeft = new Talon(Global.FLP);
+            backLeft = new Talon(Global.BLP);
+            backRight = new Talon(Global.BRP);
             Stop();
 
         }
@@ -52,6 +61,45 @@ namespace Robot1
         }
 
         /// <summary>
+        /// Starts the Timer Back to zero and clears any already existing time from it
+        /// </summary>
+        public void initTimer()
+        {
+            t.Stop();
+            t.Reset();
+            t.Start();
+        }
+
+        /// <summary>
+        /// Checks weather or not the timer is on an even number
+        /// </summary>
+        /// <returns>Bool Odd</returns>
+        public bool EvenNumber()
+        {
+            if (t.Get() % 2 == 1) return true;
+            return false;
+        }
+
+        /// <summary>
+        /// Rumbles the controller on and off every other secend
+        /// </summary>
+        public void Rumbler()
+        {
+
+                stick.SetRumble(Joystick.RumbleType.LeftRumble, (float)1.0);
+                stick.SetRumble(Joystick.RumbleType.RightRumble, (float)1.0);
+           
+        }
+
+        public void EndRumbler()
+        {
+
+            stick.SetRumble(Joystick.RumbleType.LeftRumble, (float)0);
+            stick.SetRumble(Joystick.RumbleType.RightRumble, (float)0);
+
+        }
+
+        /// <summary>
         /// Arcade Drive Runner
         /// </summary>
         public void RunArcadeDrive()
@@ -67,8 +115,12 @@ namespace Robot1
             //Shortsticking
             y *= .8;
 
+            double leftSpeed, rightSpeed;
+            leftSpeed = x - y;
+            rightSpeed = x + y;
+
             //Driveing Motors
-            ActivateMotors(x, y);
+            ActivateMotors(rightSpeed, leftSpeed);
         }
 
     }

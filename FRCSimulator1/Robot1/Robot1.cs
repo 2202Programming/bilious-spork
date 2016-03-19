@@ -14,10 +14,12 @@ namespace Robot1
     public class Robot1 : IterativeRobot
     {
         ArcadeDrive drive;
+        Compressor c;
 
         public override void RobotInit()
         {
             drive = new ArcadeDrive();
+            c = new Compressor();
         }
 
         public override void AutonomousInit()
@@ -30,9 +32,23 @@ namespace Robot1
            
         }
 
+        public override void TeleopInit()
+        {
+            c.Start();
+            drive.initTimer();
+        }
+
         public override void TeleopPeriodic()
         {
+            SmartDashboard.PutBoolean("Commpressor Value", c.GetPressureSwitchValue());
             drive.RunArcadeDrive();
+            drive.Rumbler();
+        }
+
+        public override void DisabledInit()
+        {
+            base.DisabledInit();
+            drive.EndRumbler();
         }
 
         public override void TestPeriodic()
