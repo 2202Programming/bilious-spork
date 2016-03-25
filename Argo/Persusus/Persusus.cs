@@ -14,21 +14,30 @@ namespace Persusus
     public class Persusus : IterativeRobot
     {
         Compressor c;
+        Spark s;
 
         public override void RobotInit()
         {
             c = new Compressor();
+            s = new Spark(2);
         }
 
         public override void TeleopInit()
         {
             c.Start();
             Console.WriteLine("Enable Teleop");
+            if (DriverStation.Instance.DSAtached)
+            {
+                Console.WriteLine("Driver Station is Attached");
+
+            }
+
+
         }
 
         public override void TeleopPeriodic()
         {
-           
+            s.Set(.5);
         }
     }
 }

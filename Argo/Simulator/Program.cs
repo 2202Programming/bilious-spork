@@ -24,6 +24,7 @@ namespace Simulator
             using (var game = new Simulator())
             {
                 game.Run();
+
             }
             
 
