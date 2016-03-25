@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pantheon
+namespace IControl
 {
     public abstract class IControl
     {
@@ -15,5 +15,7 @@ namespace Pantheon
         public abstract void AutoInit();
 
         public abstract void AutoPeriodic();
+
+
     }
 }
