@@ -11,7 +11,7 @@ namespace Pantheon
 	using System.Linq;
 	using System.Text;
 
-	public class IControl
+	public abstract class IControl
 	{
 		public virtual void TeleopInit()
 		{

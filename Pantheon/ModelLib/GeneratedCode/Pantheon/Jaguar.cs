@@ -37,22 +37,12 @@ namespace Pantheon
 			set;
 		}
 
-		public virtual void AutoInit()
+		protected override void Update()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void AutoPeriodic()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public virtual void DisabledInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public virtual void Set(double left, double right)
+		public virtual void Set(double right, double left)
 		{
 			throw new System.NotImplementedException();
 		}
@@ -68,6 +58,21 @@ namespace Pantheon
 		}
 
 		public virtual void TeleopPeriodic()
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public virtual void AutoInit()
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public virtual void AutoPeriodic()
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public virtual void DisabledInit()
 		{
 			throw new System.NotImplementedException();
 		}
