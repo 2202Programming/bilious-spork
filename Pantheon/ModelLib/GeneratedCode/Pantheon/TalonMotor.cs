@@ -11,7 +11,7 @@ namespace Pantheon
 	using System.Linq;
 	using System.Text;
 
-	public class TalonMotor : InteruptableMotor
+	public class TalonMotor : InteruptableMotor, IControl
 	{
 		private Talon BackLeft
 		{
@@ -52,32 +52,32 @@ namespace Pantheon
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void TeleopInit()
+		public override void TeleopInit()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void TeleopPeriodic()
+		public override void TeleopPeriodic()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void AutoInit()
+		public override void AutoInit()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void AutoPeriodic()
+		public override void AutoPeriodic()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void DisabledInit()
+		public override void DisabledInit()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void RobotInit()
+		public override void RobotInit()
 		{
 			throw new System.NotImplementedException();
 		}
