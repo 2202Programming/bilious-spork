@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-03-25T22:47:17" Importance="Medium" Text="Model's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Model::Pantheon::IControl' -  (Class), 'Model::Pantheon::IMotor' -  (Class), 'Model::Pantheon::InteruptableMotor' -  (Class), 'Model::Pantheon::MeccanumMotor' -  (Class), 'Model::Pantheon::SparkMotor' -  (Class), 'Model::Pantheon::TalonMotor' -  (Class), 'Model::Pantheon::Jaguar' -  (Class) " />
+  <Message Timestamp="2016-03-25T22:47:18" Importance="Medium" Text="'Model::Pantheon::IControl' -  (Class) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\IControl.cs" />
+  <Message Timestamp="2016-03-25T22:47:18" Importance="Medium" Text="'Model::Pantheon::IMotor' -  (Class) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\IMotor.cs" />
+  <Message Timestamp="2016-03-25T22:47:18" Importance="Medium" Text="'Model::Pantheon::InteruptableMotor' -  (Class) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\InteruptableMotor.cs" />
+  <Message Timestamp="2016-03-25T22:47:18" Importance="Medium" Text="'Model::Pantheon::MeccanumMotor' -  (Class) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\MeccanumMotor.cs" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Medium" Text="'Model::Pantheon::SparkMotor' -  (Class) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\SparkMotor.cs" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Medium" Text="'Model::Pantheon::TalonMotor' -  (Class) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\TalonMotor.cs" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Medium" Text="'Model::Pantheon::Jaguar' -  (Class) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\Jaguar.cs" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Medium" Text="Model's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'Model::Pantheon::DebugMode' -  (Enumeration), 'Model::Pantheon::MotorMode' -  (Enumeration) " />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Medium" Text="'Model::Pantheon::DebugMode' -  (Enumeration) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\DebugMode.cs" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Medium" Text="'Model::Pantheon::MotorMode' -  (Enumeration) : success (file replaced) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\MotorMode.cs" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Medium" Text="Model's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Model::Pantheon::IControl' -  (Class), 'Model::Pantheon::IMotor' -  (Class), 'Model::Pantheon::InteruptableMotor' -  (Class), 'Model::Pantheon::MeccanumMotor' -  (Class), 'Model::Pantheon::SparkMotor' -  (Class), 'Model::Pantheon::TalonMotor' -  (Class), 'Model::Pantheon::Jaguar' -  (Class) " />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="'Model::Pantheon::IControl' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="'Model::Pantheon::IMotor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="'Model::Pantheon::InteruptableMotor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="'Model::Pantheon::MeccanumMotor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="'Model::Pantheon::SparkMotor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-25T22:47:19" Importance="Diagnostic" Text="'Model::Pantheon::TalonMotor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'Model::Pantheon::Jaguar' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="The selection included 10 elements which were not bound to a template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'Model::Pantheon::' -  (Dependency): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'80535e36-19de-4a8c-b828-3512f84e669c' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'05db068c-6caf-4d84-84db-c5e145305e46' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'89f900fc-a86d-4748-b95b-9fcb255a3a8b' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'cbbd7bf7-b4b3-40ca-85cd-60d2dd4fedf7' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'Model::Pantheon::' -  (Dependency): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'Model::Pantheon' -  (Package): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'1144f5f7-d755-4650-bf83-8edf560e95ab' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'bddc4bed-1f3c-4789-85ef-eab7a013c55b' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="Diagnostic" Text="'ba129eb9-e4bc-4d1e-afbe-938c3876e90c' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-03-25T22:47:20" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
