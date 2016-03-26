@@ -10,6 +10,8 @@ namespace Pantheon
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
+    using WPILib;
+    using WPILib.SmartDashboard;
 
 	public class SmartWriter
 	{
@@ -17,22 +19,26 @@ namespace Pantheon
 
 		public static void WriteString(string label, string value, DebugMode Debug)
 		{
-			throw new System.NotImplementedException();
-		}
-
-		public virtual void Operation1()
-		{
-			throw new System.NotImplementedException();
-		}
+            if (Global.DMode > Debug)
+            {
+                SmartDashboard.PutString(label, value);
+            }
+        }
 
 		public static void WriteBool(string label, bool value, DebugMode Debug)
 		{
-			throw new System.NotImplementedException();
+			if(Global.DMode > Debug)
+            {
+                SmartDashboard.PutBoolean(label, value);
+            }
 		}
 
 		public static void WriteNumber(string label, double value, DebugMode Debug)
 		{
-			throw new System.NotImplementedException();
+            if (Global.DMode > Debug)
+            {
+                SmartDashboard.PutNumber(label, value);
+            }
 		}
 
 	}

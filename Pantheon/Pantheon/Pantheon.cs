@@ -30,6 +30,22 @@ namespace Pantheon
 
         }
 
+        public override void DisabledInit()
+        {
+            foreach (KeyValuePair<string, IControl> x in storage)
+            {
+                x.Value.DisabledInit();
+            }
+        }
+
+        public override void DisabledPeriodic()
+        {
+            foreach (KeyValuePair<string, IControl> x in storage)
+            {
+                x.Value.DisabledPeriodic();
+            }
+        }
+
         public override void AutonomousInit()
         {
             foreach(KeyValuePair<string,IControl> x in storage)
@@ -40,17 +56,26 @@ namespace Pantheon
 
         public override void AutonomousPeriodic()
         {
+            foreach (KeyValuePair<string, IControl> x in storage)
+            {
+                x.Value.AutoPeriodic();
+            }
+        }
 
+        public override void TeleopInit()
+        {
+            foreach (KeyValuePair<string, IControl> x in storage)
+            {
+                x.Value.TeleopInit();
+            }
         }
 
         public override void TeleopPeriodic()
         {
-
-        }
-
-        public override void TestPeriodic()
-        {
-
+            foreach (KeyValuePair<string, IControl> x in storage)
+            {
+                x.Value.TeleopPeriodic();
+            }
         }
     }
 }

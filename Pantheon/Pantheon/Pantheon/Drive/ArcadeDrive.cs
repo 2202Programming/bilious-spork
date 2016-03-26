@@ -10,43 +10,71 @@ namespace Pantheon
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
+    using WPILib.Extras;
 
-	public class IControl
+	public class ArcadeDrive : IControl
 	{
-		public virtual void TeleopInit()
+		public virtual XboxController xbox
+		{
+			get;
+			set;
+		}
+
+		private double LastLeft
+		{
+			get;
+			set;
+		}
+
+		private double LastRight
+		{
+			get;
+			set;
+		}
+
+		private IMotor motor
+		{
+			get;
+			set;
+		}
+
+		public override void TeleopInit()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void TeleopPeriodic()
+		public override void TeleopPeriodic()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void AutoInit()
+		public override void AutoInit()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void AutoPeriodic()
+		public override void AutoPeriodic()
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void DisabledInit()
+		public override void DisabledInit()
 		{
 			throw new System.NotImplementedException();
 		}
 
-        public virtual void DisabledPeriodic()
-        {
-            throw new System.NotImplementedException();
-        }
-
-
-        public virtual void RobotInit()
+		public override void RobotInit()
 		{
 			throw new System.NotImplementedException();
+		}
+
+		private void GetInput()
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public ArcadeDrive(IMotor nmotor)
+		{
 		}
 
 	}

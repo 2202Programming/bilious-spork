@@ -13,9 +13,9 @@ namespace Pantheon
 
 	public enum DebugMode : int
 	{
-		Full,
-		Competition,
-		None,
-		Debug,
+		Full = 30,
+		Competition = 10,
+		None = 0,
+		Debug = 20,
 	}
 }

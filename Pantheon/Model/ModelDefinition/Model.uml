@@ -121,7 +121,6 @@
     <packageHasNamedElement>
       <packageMoniker
         Id="bb6dd3c4-b21b-4765-af60-5545c5c22af2"
-        LastKnownName="WPILIB"
         LastKnownLocation="Package_2213.uml" />
     </packageHasNamedElement>
   </packagedElements>
