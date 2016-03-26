@@ -64,7 +64,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IControl.cs" />
+    <Compile Include="Pantheon\DebugMode.cs" />
+    <Compile Include="Pantheon\IControl.cs" />
+    <Compile Include="Pantheon\IMotor.cs" />
+    <Compile Include="Pantheon\InteruptableMotor.cs" />
+    <Compile Include="Pantheon\Jaguar.cs" />
+    <Compile Include="Pantheon\MeccanumMotor.cs" />
+    <Compile Include="Pantheon\MotorMode.cs" />
+    <Compile Include="Pantheon\SparkMotor.cs" />
+    <Compile Include="Pantheon\TalonMotor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Pantheon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
