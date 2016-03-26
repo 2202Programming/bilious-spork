@@ -39,6 +39,15 @@ namespace Pantheon
 			set;
 		}
 
+        public JaguarMotor(int FL, int BL, int BR, int FR)
+        {
+            FrontRight = new Jaguar(FR);
+            FrontLeft = new Jaguar(FL);
+
+            BackRight = new Jaguar(BR);
+            BackLeft = new Jaguar(BL);
+        }
+
 		public override void AutoInit()
 		{
 			throw new System.NotImplementedException();

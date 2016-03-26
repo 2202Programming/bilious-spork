@@ -39,46 +39,79 @@ namespace Pantheon
 			set;
 		}
 
-		public override void Set(double left, double right)
-		{
-			throw new System.NotImplementedException();
-		}
+        public SparkMotor(int FL, int FR, int BR, int BL)
+        {
+            FrontLeft = new Spark(FL);
+            BackLeft = new Spark(BL);
+            BackRight = new Spark(BR);
+            FrontRight = new Spark(FR);
+        }
 
-		public override void Stop()
-		{
-			throw new System.NotImplementedException();
-		}
+        public override void Set(double left, double right)
+        {
+            LeftSet = left;
+            RightSet = right;
+        }
 
-		public override void AutoInit()
-		{
-			throw new System.NotImplementedException();
-		}
+        public override void Stop()
+        {
+            LeftSet = 0.0;
+            RightSet = 0.0;
+        }
 
-		public override void AutoPeriodic()
-		{
-			throw new System.NotImplementedException();
-		}
+        public override void AutoInit()
+        {
+            LeftSet = 0.0;
+            RightSet = 0.0;
 
-		public override void DisabledInit()
-		{
-			throw new System.NotImplementedException();
-		}
+            LeftExterior = 0.0;
+            RightExterior = 0.0;
 
-		public override void TeleopInit()
-		{
-			throw new System.NotImplementedException();
-		}
+            mode = MotorMode.Auto;
+            Update();
+        }
 
-		public override void TeleopPeriodic()
-		{
-			throw new System.NotImplementedException();
-		}
+        public override void AutoPeriodic()
+        {
+            Update();
+            Drive();
+        }
 
-		public override void RobotInit()
-		{
-			throw new System.NotImplementedException();
-		}
+        public override void DisabledInit()
+        {
+            mode = MotorMode.Stopped;
+            Update();
+        }
 
-	}
+        public override void TeleopInit()
+        {
+            mode = MotorMode.UserControl;
+            Update();
+        }
+
+        public override void TeleopPeriodic()
+        {
+            Update();
+            Drive();
+        }
+
+        public override void RobotInit()
+        {
+            mode = MotorMode.Stopped;
+            Update();
+        }
+
+        public void Drive()
+        {
+            BackLeft.Set(LeftSet);
+            FrontLeft.Set(LeftSet);
+
+            BackRight.Set(RightSet);
+            FrontRight.Set(RightSet);
+
+            SmartWriter.WriteNumber("Left Set", LeftSet, Global.DMode);
+            SmartWriter.WriteNumber("Right Set", RightSet, Global.DMode);
+        }
+    }
 }
 

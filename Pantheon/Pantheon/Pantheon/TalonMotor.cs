@@ -60,7 +60,8 @@ namespace Pantheon
 
 		public override void Stop()
 		{
-			throw new System.NotImplementedException();
+            LeftSet = 0.0;
+            RightSet = 0.0;
 		}
 
 		public override void AutoInit()
@@ -84,22 +85,25 @@ namespace Pantheon
 		public override void DisabledInit()
 		{
             mode = MotorMode.Stopped;
+            Update();
         }
 
 		public override void TeleopInit()
 		{
             mode = MotorMode.UserControl;
-			throw new System.NotImplementedException();
+            Update();
 		}
 
 		public override void TeleopPeriodic()
 		{
-			throw new System.NotImplementedException();
+            Update();
+            Drive();
 		}
 
 		public override void RobotInit()
 		{
             mode = MotorMode.Stopped;
+            Update();
 		}
 
         public void Drive()
