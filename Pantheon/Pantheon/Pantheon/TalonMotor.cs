@@ -40,9 +40,22 @@ namespace Pantheon
 			set;
 		}
 
+        public TalonMotor(int FR, int FL, int BL, int BR)
+        {
+            mode = MotorMode.Stopped;
+
+
+
+            BackLeft = new Talon(BL);
+            BackRight = new Talon(BR);
+            FrontLeft = new Talon(FL);
+            FrontRight = new Talon(FR);
+        }
+
 		public override void Set(double left, double right)
 		{
-			throw new System.NotImplementedException();
+            LeftSet = left;
+            RightSet = right;
 		}
 
 		public override void Stop()
@@ -52,21 +65,30 @@ namespace Pantheon
 
 		public override void AutoInit()
 		{
-			throw new System.NotImplementedException();
-		}
+            LeftSet = 0.0;
+            RightSet = 0.0;
 
-		public override void AutoPeriodic()
+            LeftExterior = 0.0;
+            RightExterior = 0.0;
+
+            mode = MotorMode.Auto;
+            Update();
+        }
+
+        public override void AutoPeriodic()
 		{
-			throw new System.NotImplementedException();
+            Update();
+            Drive();
 		}
 
 		public override void DisabledInit()
 		{
-			throw new System.NotImplementedException();
-		}
+            mode = MotorMode.Stopped;
+        }
 
 		public override void TeleopInit()
 		{
+            mode = MotorMode.UserControl;
 			throw new System.NotImplementedException();
 		}
 
@@ -77,9 +99,20 @@ namespace Pantheon
 
 		public override void RobotInit()
 		{
-			throw new System.NotImplementedException();
+            mode = MotorMode.Stopped;
 		}
 
+        public void Drive()
+        {
+            BackLeft.Set(LeftSet);
+            FrontLeft.Set(LeftSet);
+
+            BackRight.Set(RightSet);
+            FrontRight.Set(RightSet);
+            
+            SmartWriter.WriteNumber("Left Set", LeftSet, Global.DMode);
+            SmartWriter.WriteNumber("Right Set", RightSet, Global.DMode);
+        }
 	}
 }
 

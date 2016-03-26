@@ -27,6 +27,18 @@ namespace Pantheon
 			set;
 		}
 
+        public double LeftExterior
+        {
+            get;
+            set;
+        }
+
+        public double RightExterior
+        {
+            get;
+            set;
+        }
+
 		public virtual MotorMode mode
 		{
 			get;
@@ -35,7 +47,17 @@ namespace Pantheon
 
 		protected virtual void Update()
 		{
-			throw new System.NotImplementedException();
+            switch (mode)
+            {
+                case MotorMode.Auto:
+                    LeftSet = LeftExterior;
+                    RightSet = RightExterior;
+                    break;
+                case MotorMode.Stopped:
+                    LeftSet = 0;
+                    RightSet = 0;
+                    break;
+            }
 		}
 
 	}

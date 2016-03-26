@@ -11,15 +11,24 @@ namespace Pantheon
 	using System.Linq;
 	using System.Text;
 
-	public class IMotor : IControl
+	public class SmartWriter
 	{
-
-		public virtual void Set(double right, double left)
+		public static void WriteString(string label, string value, DebugMode Debug)
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public virtual void Stop()
+		public virtual void Operation1()
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public static void WriteBool(string label, bool value, DebugMode Debug)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public static void WriteNumber(string label, double value, DebugMode Debug)
 		{
 			throw new System.NotImplementedException();
 		}

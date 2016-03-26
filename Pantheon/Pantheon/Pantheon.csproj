@@ -65,12 +65,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pantheon\DebugMode.cs" />
+    <Compile Include="Pantheon\Global.cs" />
     <Compile Include="Pantheon\IControl.cs" />
     <Compile Include="Pantheon\IMotor.cs" />
     <Compile Include="Pantheon\InteruptableMotor.cs" />
     <Compile Include="Pantheon\JaguarMotor.cs" />
     <Compile Include="Pantheon\MeccanumMotor.cs" />
     <Compile Include="Pantheon\MotorMode.cs" />
+    <Compile Include="Pantheon\SmartWriter.cs" />
     <Compile Include="Pantheon\SparkMotor.cs" />
     <Compile Include="Pantheon\TalonMotor.cs" />
     <Compile Include="Program.cs" />

@@ -66,6 +66,13 @@
             <LiteralElementListCompartment Id="2a31b74f-cc48-46c6-8c2e-580e32be2376" absoluteBounds="0.765, 4.7030034589767453, 1.4700000000000002, 0.68164060264825832" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
           </nestedChildShapes>
         </enumerationShape>
+        <classShape Id="851a5960-2531-4134-b5fa-afb2f6019d28" absoluteBounds="4.75, 0.875, 1.5, 1.6683043545484542" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+          <classMoniker Id="14a9fa51-2e86-4d9b-a672-09e36f8900b3" LastKnownName="SmartWriter" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="d7121574-5f49-4162-9c6c-5e19aed03233" absoluteBounds="4.765, 1.3903356393178306, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="1c82a960-9a14-40c9-867b-1160a86f37fb" absoluteBounds="4.765, 1.6015075068672497, 1.4700000000000002, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
       </nestedChildShapes>
     </packageShape>
     <generalizationConnector edgePoints="[(3.5 : 3.25); (3.5 : 2.86361684461435)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
