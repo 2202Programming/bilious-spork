@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Pantheon\DebugMode.cs" />
     <Compile Include="Pantheon\Drive\ArcadeDrive.cs" />
+    <Compile Include="Pantheon\Drive\IDrive.cs" />
     <Compile Include="Pantheon\Drive\MeccanumDrive.cs" />
     <Compile Include="Pantheon\Drive\TankDrive.cs" />
     <Compile Include="Pantheon\Global.cs" />

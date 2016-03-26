@@ -123,6 +123,14 @@
         Id="bb6dd3c4-b21b-4765-af60-5545c5c22af2"
         LastKnownLocation="Package_2213.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="14df47ba-005f-430c-a70e-dc695c4e6f78"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

@@ -12,70 +12,17 @@ namespace Pantheon
 	using System.Text;
     using WPILib.Extras;
 
-
-    public class TankDrive : IControl
+	public class TankDrive : IDrive
 	{
-		public virtual XboxController xbox
-		{
-			get;
-			set;
-		}
 
-		private double LastLeft
-		{
-			get;
-			set;
-		}
+        public TankDrive(XboxController nxbox, IMotor nmotor) : base(nxbox, nmotor)
+        {
 
-		private double LastRight
-		{
-			get;
-			set;
-		}
+        }
 
-		private IMotor motor
-		{
-			get;
-			set;
-		}
-
-		public override void TeleopInit()
+        private void GetInput()
 		{
 			throw new System.NotImplementedException();
-		}
-
-		public override void TeleopPeriodic()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void AutoInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void AutoPeriodic()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void DisabledInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void RobotInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		private void GetInput()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public TankDrive(IMotor nmotor)
-		{
 		}
 
 	}
