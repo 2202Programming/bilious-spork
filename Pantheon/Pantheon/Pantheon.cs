@@ -6,44 +6,48 @@ using WPILib.SmartDashboard;
 
 namespace Pantheon
 {
-    /// <summary>
-    /// The VM is configured to automatically run this class, and to call the
-    /// functions corresponding to each mode, as described in the IterativeRobot
-    /// documentation. 
-    /// </summary>
+
     public class Pantheon : IterativeRobot
     {
 
+        IMotor motor;
+        Dictionary<string, IControl> storage;
+
         public override void RobotInit()
         {
-           
+            storage = new Dictionary<string, IControl>();
+            string name = "HERMES";
+            name.ToUpper();
+
+            if (name.Equals("HERMES".ToUpper()))
+            {
+                //Create all objects to add
+                motor = new SparkMotor(0, 1, 2, 3);
+
+                //Put all the created objects in the list
+                storage.Add("Motor", motor);
+            }
+
         }
 
-       
         public override void AutonomousInit()
         {
-
+            foreach(KeyValuePair<string,IControl> x in storage)
+            {
+                x.Value.AutoInit();
+            }
         }
 
-        /// <summary>
-        /// This function is called periodically during autonomous
-        /// </summary>
         public override void AutonomousPeriodic()
         {
 
         }
 
-        /// <summary>
-        /// This function is called periodically during operator control
-        /// </summary>
         public override void TeleopPeriodic()
         {
 
         }
 
-        /// <summary>
-        /// This function is called periodically during test mode
-        /// </summary>
         public override void TestPeriodic()
         {
 

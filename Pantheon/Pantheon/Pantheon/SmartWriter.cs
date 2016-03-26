@@ -13,6 +13,8 @@ namespace Pantheon
 
 	public class SmartWriter
 	{
+
+
 		public static void WriteString(string label, string value, DebugMode Debug)
 		{
 			throw new System.NotImplementedException();
