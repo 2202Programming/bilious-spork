@@ -68,7 +68,7 @@
     <Compile Include="Pantheon\IControl.cs" />
     <Compile Include="Pantheon\IMotor.cs" />
     <Compile Include="Pantheon\InteruptableMotor.cs" />
-    <Compile Include="Pantheon\Jaguar.cs" />
+    <Compile Include="Pantheon\JaguarMotor.cs" />
     <Compile Include="Pantheon\MeccanumMotor.cs" />
     <Compile Include="Pantheon\MotorMode.cs" />
     <Compile Include="Pantheon\SparkMotor.cs" />
