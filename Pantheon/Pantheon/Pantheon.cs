@@ -22,14 +22,13 @@ namespace Pantheon
             if (name.Equals("HERMES".ToUpper()))
             {
                 //Create all objects to add
-                motor = new SparkMotor(0, 1, 2, 3);
+                motor = new TalonMotor(0, 1, 2, 3);
 
                 //Put all the created objects in the list
                 storage.Add("Motor", motor);
             }
 
         }
-
         public override void DisabledInit()
         {
             foreach (KeyValuePair<string, IControl> x in storage)
@@ -77,5 +76,7 @@ namespace Pantheon
                 x.Value.TeleopPeriodic();
             }
         }
+
     }
+
 }

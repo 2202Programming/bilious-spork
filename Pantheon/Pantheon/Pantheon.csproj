@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pantheon\Components\ControlMode.cs" />
+    <Compile Include="Pantheon\Components\TimShooter.cs" />
+    <Compile Include="Pantheon\CompressorControl.cs" />
     <Compile Include="Pantheon\DebugMode.cs" />
     <Compile Include="Pantheon\Drive\ArcadeDrive.cs" />
     <Compile Include="Pantheon\Drive\IDrive.cs" />
