@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pantheon.Components
 {
-    enum ControlMode
+    public enum ControlMode
     {
         Enabled,
         Disabled,

@@ -9,7 +9,7 @@ using Pantheon;
 
 namespace Pantheon.Components
 {
-    public class TimShooter : IControl
+    public class TimShooter : IComponent
     {
         
         /// <summary>
@@ -53,9 +53,6 @@ namespace Pantheon.Components
         /// Double solinoid that controls the trigger mechanism
         /// </summary>
         DoubleSolenoid trigger;
-
-        //Mode of Control it is in
-        ControlMode mode;
 
         //Values for the Triggers to be set to
         private double wheelSet;
