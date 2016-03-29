@@ -209,6 +209,7 @@ namespace Pantheon.Components
         public override void TeleopInit()
         {
             Zero();
+            Update();
             mode = ControlMode.Enabled;
         }
 
@@ -219,6 +220,16 @@ namespace Pantheon.Components
         {
             ReadController();
             Update();
+        }
+
+        /// <summary>
+        /// Resets all the motors and clears the mode
+        /// </summary>
+        public override void DisabledInit()
+        {
+            Zero();
+            Update();
+            mode = ControlMode.Disabled;
         }
     }
 }

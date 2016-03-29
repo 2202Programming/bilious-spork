@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4c5c3a4d-be42-432c-ab13-6dc475877fd0"
+  name="Components" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="14f8d6b4-e25d-490b-939c-eb1f10ec0758"
+        name="IComponent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9355efe9-4f28-466f-9d4d-5980c075443b">
+            <enumerationMoniker
+              Id="ea4403dc-f515-44b2-863d-dded6a7b1924"
+              LastKnownName="ControlMode"
+              LastKnownLocation="Package_1735.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="1929f41f-535b-4ebd-94b1-90eefc451af7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ab000c03-5587-4935-af25-469343560817"
+              LastKnownName="IControl"
+              LastKnownLocation="Package_2149.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="3456852d-5950-4cdc-99ce-47f2262c53ae"
+            name="mode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="ea4403dc-f515-44b2-863d-dded6a7b1924"
+                LastKnownName="ControlMode"
+                LastKnownLocation="Package_1735.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="ea4403dc-f515-44b2-863d-dded6a7b1924"
+        name="ControlMode"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="286f4d07-36ea-49d3-8bb2-d42722f91dd0"
+            name="Enabled" />
+          <enumerationLiteral
+            Id="87211f51-7537-49b5-964a-c3ec6e3c33c9"
+            name="Disabled" />
+          <enumerationLiteral
+            Id="4aa94434-663b-4927-9f15-8d357dbdcdea"
+            name="External" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="afc3ffeb-3ed2-420f-93d0-6e1c1f3ba46d"
+        name="TimShooter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="1143fe27-a730-449c-b52f-c0ee8a35bcde"
+            isSubstitutable="false">
+            <classMoniker
+              Id="14f8d6b4-e25d-490b-939c-eb1f10ec0758"
+              LastKnownName="IComponent"
+              LastKnownLocation="Package_1735.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

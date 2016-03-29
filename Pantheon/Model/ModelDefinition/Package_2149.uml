@@ -5890,5 +5890,11 @@
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4c5c3a4d-be42-432c-ab13-6dc475877fd0"
+        LastKnownName="Components"
+        LastKnownLocation="Package_1735.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

@@ -4211,6 +4211,65 @@
               </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="fa846942-7ed1-4e93-bfaf-407aff3ebf48" name="Components">
+              <elementDefinition Id="4c5c3a4d-be42-432c-ab13-6dc475877fd0" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="cd59deee-9f87-4757-86e0-0ee93c1d7afc" name="IComponent" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="14f8d6b4-e25d-490b-939c-eb1f10ec0758" />
+                    <suppliersInternal>
+                      <dependency Id="5a82b635-5c7b-40ed-a8f9-78f30e866446">
+                        <enumerationMoniker Id="71d7af4b-67dc-4ef2-8881-1cc2bcf19e4d" LastKnownName="ControlMode" />
+                        <elementDefinition Id="9355efe9-4f28-466f-9d4d-5980c075443b" />
+                      </dependency>
+                    </suppliersInternal>
+                    <generalsInternal>
+                      <generalization Id="d714a6cd-43a6-41aa-ad40-ab761aa61eaf" isSubstitutable="false">
+                        <classMoniker Id="e1c37af7-65fc-4fc7-a18a-95eafb75e347" LastKnownName="IControl" />
+                        <elementDefinition Id="1929f41f-535b-4ebd-94b1-90eefc451af7" />
+                      </generalization>
+                    </generalsInternal>
+                    <ownedAttributesInternal>
+                      <property Id="8010be86-2c99-44e0-b60e-a4b79156d5ce" name="mode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="3456852d-5950-4cdc-99ce-47f2262c53ae" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b184fafb-71db-4a7f-b22e-4b83b3ad7049" LastKnownName="ControlMode" />
+                        </type_NamedElement>
+                      </property>
+                    </ownedAttributesInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <enumeration Id="71d7af4b-67dc-4ef2-8881-1cc2bcf19e4d" name="ControlMode" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="ea4403dc-f515-44b2-863d-dded6a7b1924" />
+                    <ownedLiterals>
+                      <enumerationLiteral Id="69567242-abf9-46d5-be50-198cdb102532" name="Enabled">
+                        <elementDefinition Id="286f4d07-36ea-49d3-8bb2-d42722f91dd0" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="733be9fd-5225-4880-94d3-531592632b65" name="Disabled">
+                        <elementDefinition Id="87211f51-7537-49b5-964a-c3ec6e3c33c9" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="5a31020e-86cb-4546-9bff-159adf4a84e6" name="External">
+                        <elementDefinition Id="4aa94434-663b-4927-9f15-8d357dbdcdea" />
+                      </enumerationLiteral>
+                    </ownedLiterals>
+                  </enumeration>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="f6903189-3b5d-415b-aa81-ed3b50940a73" name="TimShooter" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="afc3ffeb-3ed2-420f-93d0-6e1c1f3ba46d" />
+                    <generalsInternal>
+                      <generalization Id="1395552d-d902-486a-a7fc-8bfb54b4f3e7" isSubstitutable="false">
+                        <classMoniker Id="cd59deee-9f87-4757-86e0-0ee93c1d7afc" LastKnownName="IComponent" />
+                        <elementDefinition Id="1143fe27-a730-449c-b52f-c0ee8a35bcde" />
+                      </generalization>
+                    </generalsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
@@ -4299,6 +4358,11 @@
         <elementDefinition Id="14df47ba-005f-430c-a70e-dc695c4e6f78" />
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b184fafb-71db-4a7f-b22e-4b83b3ad7049" name="ControlMode" isAbstract="false" isLeaf="false" cachedFullName="Model::Pantheon::Components::ControlMode">
+        <elementDefinition Id="ea4403dc-f515-44b2-863d-dded6a7b1924" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="bcec44d3-aabe-4946-8369-8d34569db53d" name="Model">
     <elementDefinition Id="e76d99ee-97cd-4eb0-9877-048c671b4816" />
