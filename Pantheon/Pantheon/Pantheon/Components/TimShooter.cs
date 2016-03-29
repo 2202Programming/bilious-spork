@@ -38,10 +38,14 @@ namespace Pantheon.Components
         /// </summary>
         XboxController xbox;
 
-        //Two jags
-        /// <summary>First Jaguar</summary>
+        /// <summary>
+        /// First Jaguar
+        /// </summary>
         Jaguar one;
-        /// <summary>Second Jaguar</summary>
+
+        /// <summary>
+        /// Second Jaguar
+        /// </summary>
         Jaguar two;
 
         /// <summary>
