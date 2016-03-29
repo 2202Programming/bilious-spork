@@ -10,5 +10,6 @@ namespace Pantheon.Components
     {
         Enabled,
         Disabled,
+        ExternalControl,
     }
 }
