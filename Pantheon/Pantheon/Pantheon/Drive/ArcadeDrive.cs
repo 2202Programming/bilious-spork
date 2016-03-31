@@ -18,14 +18,34 @@ namespace Pantheon
 
         public ArcadeDrive(XboxController nxbox, IMotor nmotor) : base(nxbox, nmotor)
         {
-            
+           
         }
 
 		private void GetInput()
 		{
-			throw new System.NotImplementedException();
+            double x = xbox.GetLeftXAxis();
+            double y = xbox.GetLeftYAxis();
+
+            y += .5;
+            x *= .8;
+
+            double left;
+            double right;
+
+            left = y;
+            right = y;
+
+            left -= x;
+            right -= x;
+
+            motor.Set(right, left);
 		}
 
-	}
+        public override void TeleopPeriodic()
+        {
+            GetInput();
+        }
+
+    }
 }
 

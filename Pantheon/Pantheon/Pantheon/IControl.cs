@@ -15,38 +15,37 @@ namespace Pantheon
 	{
 		public virtual void TeleopInit()
 		{
-			throw new System.NotImplementedException();
+			 
 		}
 
 		public virtual void TeleopPeriodic()
 		{
-			throw new System.NotImplementedException();
+			 
 		}
 
 		public virtual void AutoInit()
 		{
-			throw new System.NotImplementedException();
+			 
 		}
 
 		public virtual void AutoPeriodic()
 		{
-			throw new System.NotImplementedException();
+			 
 		}
 
 		public virtual void DisabledInit()
 		{
-			throw new System.NotImplementedException();
+			 
 		}
 
         public virtual void DisabledPeriodic()
         {
-            throw new System.NotImplementedException();
+ 
         }
 
 
         public virtual void RobotInit()
 		{
-			throw new System.NotImplementedException();
 		}
 
 	}

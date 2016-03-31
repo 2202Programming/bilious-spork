@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using WPILib;
 using WPILib.SmartDashboard;
+using WPILib.Extras;
 
 namespace Pantheon
 {
@@ -11,21 +12,30 @@ namespace Pantheon
     {
 
         IMotor motor;
+        XboxController xbox;
+        IDrive drive;
+
         Dictionary<string, IControl> storage;
 
         public override void RobotInit()
         {
             storage = new Dictionary<string, IControl>();
+            xbox = new XboxController(0);
+            
+
             string name = "HERMES";
             name.ToUpper();
 
             if (name.Equals("HERMES".ToUpper()))
             {
                 //Create all objects to add
-                motor = new TalonMotor(0, 1, 2, 3);
+                motor = new SparkMotor(0, 1, 2, 3);
+                drive = new ArcadeDrive(xbox, motor);
+
 
                 //Put all the created objects in the list
                 storage.Add("Motor", motor);
+                storage.Add("Drive", drive);
             }
 
         }

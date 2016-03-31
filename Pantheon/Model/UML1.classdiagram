@@ -4241,6 +4241,75 @@
                   </class>
                 </packageHasNamedElement>
                 <packageHasNamedElement>
+                  <class Id="f6903189-3b5d-415b-aa81-ed3b50940a73" name="TimShooter" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="afc3ffeb-3ed2-420f-93d0-6e1c1f3ba46d" />
+                    <suppliersInternal>
+                      <dependency Id="24109226-9dd6-46dd-bdc1-86bc32e47bc7">
+                        <enumerationMoniker Id="dfbb7b9d-1333-48a7-9158-71deeb0e49df" LastKnownName="FireinfMode" />
+                        <elementDefinition Id="267b4042-bdae-4f84-a0d9-198ea733bf99" />
+                      </dependency>
+                    </suppliersInternal>
+                    <generalsInternal>
+                      <generalization Id="1395552d-d902-486a-a7fc-8bfb54b4f3e7" isSubstitutable="false">
+                        <classMoniker Id="cd59deee-9f87-4757-86e0-0ee93c1d7afc" LastKnownName="IComponent" />
+                        <elementDefinition Id="1143fe27-a730-449c-b52f-c0ee8a35bcde" />
+                      </generalization>
+                    </generalsInternal>
+                    <ownedAttributesInternal>
+                      <property Id="461c898d-0983-48d8-8c15-50048ec0bbe2" name="one" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="98bf0fb1-c22c-43a9-baab-f94d6bf80ae0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4530541f-d77d-4e7f-a5da-a8c6f21ef095" LastKnownName="jaguar" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="e7f31fcf-2bbf-4808-bea2-1b7d8cf7fb6d" name="two" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="8286ed5f-bffd-4b4b-ae27-3bedbf46b472" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4530541f-d77d-4e7f-a5da-a8c6f21ef095" LastKnownName="jaguar" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="4fc54cb3-f89e-4f62-94f9-3979b949fc7e" name="elevator" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="1895702b-9b50-4c59-8eb9-7f00d56ca791" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="981c7914-7bea-471f-a212-5c75bbc7483e" LastKnownName="victor" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="05e80429-324b-4a93-8b37-902ed014a0e3" name="trigger" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4ed2e12c-9d36-454e-b82d-86e24a375bdf" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="cf6c3aec-b101-467c-8b42-d16ff5884263" LastKnownName="DoubleSolenoid" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="45f2983b-7a25-4bcc-b049-45feb0076fe5" name="fstate" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="2748b814-5fcb-47ae-a9d0-230d3cf04e20" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="09f1f227-8246-4c94-8d3d-c4ec846d35c7" LastKnownName="FireingMode" />
+                        </type_NamedElement>
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="b776c5ce-a9ce-4afa-ae7f-715e1dc7642f" name="TeleopInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="74ed9bf1-5dba-4f70-bfae-85368f3e2ff3" />
+                      </operation>
+                      <operation Id="a53ec734-25e4-4446-9610-1077dfa99943" name="TeleopPeriodic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="60c2af96-b951-4b63-8019-d7f1c6e66348" />
+                      </operation>
+                      <operation Id="f2687e12-9750-49c6-a9a2-6bdd594b9e20" name="DisabledInit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="996fef09-1ffc-492c-b9b0-6f932cf9a818" />
+                      </operation>
+                      <operation Id="02e080a6-08e3-488b-a334-c6f7a4cbed48" name="Update" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="31cb4bca-753a-4cc5-842a-931d7b96fb6a" />
+                      </operation>
+                      <operation Id="c0960e54-0ac3-4adf-97cd-a8b0d8fd2c87" name="Zero" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="87d56aa5-7eb1-4650-8a71-39d94bebf82c" />
+                      </operation>
+                      <operation Id="38a76303-abbe-42ce-9c66-dc4590b496e5" name="ReadController" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="4edd3f62-2bbd-4a49-9821-ff3b008cf6ad" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
                   <enumeration Id="71d7af4b-67dc-4ef2-8881-1cc2bcf19e4d" name="ControlMode" isAbstract="false" isLeaf="false">
                     <elementDefinition Id="ea4403dc-f515-44b2-863d-dded6a7b1924" />
                     <ownedLiterals>
@@ -4257,15 +4326,20 @@
                   </enumeration>
                 </packageHasNamedElement>
                 <packageHasNamedElement>
-                  <class Id="f6903189-3b5d-415b-aa81-ed3b50940a73" name="TimShooter" isAbstract="false" isLeaf="false" isActiveClass="false">
-                    <elementDefinition Id="afc3ffeb-3ed2-420f-93d0-6e1c1f3ba46d" />
-                    <generalsInternal>
-                      <generalization Id="1395552d-d902-486a-a7fc-8bfb54b4f3e7" isSubstitutable="false">
-                        <classMoniker Id="cd59deee-9f87-4757-86e0-0ee93c1d7afc" LastKnownName="IComponent" />
-                        <elementDefinition Id="1143fe27-a730-449c-b52f-c0ee8a35bcde" />
-                      </generalization>
-                    </generalsInternal>
-                  </class>
+                  <enumeration Id="dfbb7b9d-1333-48a7-9158-71deeb0e49df" name="FireinfMode" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="e135ce34-0ab1-46c1-8310-b878b41903a4" />
+                    <ownedLiterals>
+                      <enumerationLiteral Id="b4099f3c-9a98-4573-99f2-b670a584859c" name="ReadyToFire">
+                        <elementDefinition Id="6bf67362-c07e-494f-99de-0a1c35e53a77" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="426dca03-b8cf-4385-8e3d-033c28db4592" name="Fireing">
+                        <elementDefinition Id="f028a7c1-20a2-4a1b-93a1-72b4dc6b9c88" />
+                      </enumerationLiteral>
+                      <enumerationLiteral Id="75c03ad0-23b3-47ab-9f13-edba6eb1f9c9" name="Reloading">
+                        <elementDefinition Id="9665e5fc-4ced-4149-9c69-25a0e35fe73d" />
+                      </enumerationLiteral>
+                    </ownedLiterals>
+                  </enumeration>
                 </packageHasNamedElement>
               </packagedElements>
             </package>
@@ -4361,6 +4435,26 @@
     <packageHasNamedElement>
       <referencedType Id="b184fafb-71db-4a7f-b22e-4b83b3ad7049" name="ControlMode" isAbstract="false" isLeaf="false" cachedFullName="Model::Pantheon::Components::ControlMode">
         <elementDefinition Id="ea4403dc-f515-44b2-863d-dded6a7b1924" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4530541f-d77d-4e7f-a5da-a8c6f21ef095" name="jaguar" isAbstract="false" isLeaf="false" cachedFullName="jaguar">
+        <elementDefinition Id="ab7c6a61-3712-40cb-87fd-64569e792e85" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="981c7914-7bea-471f-a212-5c75bbc7483e" name="victor" isAbstract="false" isLeaf="false" cachedFullName="victor">
+        <elementDefinition Id="21caf8bc-936c-4982-96a5-8cfd99137356" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cf6c3aec-b101-467c-8b42-d16ff5884263" name="DoubleSolenoid" isAbstract="false" isLeaf="false" cachedFullName="DoubleSolenoid">
+        <elementDefinition Id="d5d6c27d-662d-4a54-bf1e-1ae248603d9b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="09f1f227-8246-4c94-8d3d-c4ec846d35c7" name="FireingMode" isAbstract="false" isLeaf="false" cachedFullName="FireingMode">
+        <elementDefinition Id="893cb0fe-3107-40c8-bc24-cc33b38cb224" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

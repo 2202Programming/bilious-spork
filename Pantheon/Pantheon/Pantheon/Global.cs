@@ -10,6 +10,7 @@ namespace Pantheon
     {
 
         public const DebugMode DMode = DebugMode.Full;
+        public const bool DisplayConsoleOutput = true;
 
     }
 }

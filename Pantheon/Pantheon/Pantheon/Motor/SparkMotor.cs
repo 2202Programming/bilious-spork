@@ -45,6 +45,12 @@ namespace Pantheon
             BackLeft = new Spark(BL);
             BackRight = new Spark(BR);
             FrontRight = new Spark(FR);
+
+            FrontLeft.Inverted = true;
+            BackLeft.Inverted = true;
+
+            mode = MotorMode.Stopped;
+            Update();
         }
 
         public override void Set(double left, double right)
@@ -95,12 +101,6 @@ namespace Pantheon
             Drive();
         }
 
-        public override void RobotInit()
-        {
-            mode = MotorMode.Stopped;
-            Update();
-        }
-
         public void Drive()
         {
             BackLeft.Set(LeftSet);
@@ -109,8 +109,8 @@ namespace Pantheon
             BackRight.Set(RightSet);
             FrontRight.Set(RightSet);
 
-            SmartWriter.WriteNumber("Left Set", LeftSet, Global.DMode);
-            SmartWriter.WriteNumber("Right Set", RightSet, Global.DMode);
+            SmartWriter.WriteNumber("Left Set", LeftSet, DebugMode.Full);
+            SmartWriter.WriteNumber("Right Set", RightSet, DebugMode.Full);
         }
     }
 }

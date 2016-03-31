@@ -23,13 +23,13 @@ namespace Pantheon
             right = 0;
         }
 
-		public XboxController xbox
+		protected XboxController xbox
 		{
 			get;
 			set;
 		}
 
-		private IMotor motor
+		protected IMotor motor
 		{
 			get;
 			set;
