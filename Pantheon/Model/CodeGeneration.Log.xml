@@ -6,24 +6,24 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="High" Text="Code generation or text transformation started." />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Diagnostic" Text="Name = ClassTemplate" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2016-03-25T23:21:58" Importance="Medium" Text="Model's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Model::Pantheon::SmartWriter' -  (Class) " />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Medium" Text="'Model::Pantheon::SmartWriter' -  (Class) : success (file created) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\SmartWriter.cs" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="Name = StructTemplate" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Medium" Text="Model's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Model::Pantheon::SmartWriter' -  (Class) " />
-  <Message Timestamp="2016-03-25T23:21:59" Importance="Diagnostic" Text="'Model::Pantheon::SmartWriter' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2016-03-25T23:22:00" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-03-26T10:36:17" Importance="Medium" Text="Model's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Model::Pantheon::CompressorControl' -  (Class) " />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Medium" Text="'Model::Pantheon::CompressorControl' -  (Class) : success (file created) - C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\ModelLib\GeneratedCode\Pantheon\CompressorControl.cs" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Medium" Text="Model's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Model::Pantheon::CompressorControl' -  (Class) " />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="Diagnostic" Text="'Model::Pantheon::CompressorControl' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-26T10:36:18" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
 </Log>
