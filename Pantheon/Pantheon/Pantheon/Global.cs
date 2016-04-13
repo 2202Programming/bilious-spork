@@ -12,5 +12,6 @@ namespace Pantheon
         public const DebugMode DMode = DebugMode.Full;
         public const bool DisplayConsoleOutput = true;
 
+        public const bool isAuto = false;
     }
 }
