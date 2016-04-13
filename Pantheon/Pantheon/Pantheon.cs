@@ -19,6 +19,8 @@ namespace Pantheon
 
         public override void RobotInit()
         {
+            SmartWriter.WriteString("Robot Mode", "RobotInit", DebugMode.Competition);
+
             storage = new Dictionary<string, IControl>();
             xbox = new XboxController(0);
             
@@ -41,6 +43,7 @@ namespace Pantheon
         }
         public override void DisabledInit()
         {
+            SmartWriter.WriteString("Robot Mode", "DisabledInit", DebugMode.Competition);
             foreach (KeyValuePair<string, IControl> x in storage)
             {
                 x.Value.DisabledInit();
@@ -49,6 +52,8 @@ namespace Pantheon
 
         public override void DisabledPeriodic()
         {
+            SmartWriter.WriteString("Robot Mode", "DisabledPeriodic", DebugMode.Competition);
+
             foreach (KeyValuePair<string, IControl> x in storage)
             {
                 x.Value.DisabledPeriodic();
@@ -57,7 +62,9 @@ namespace Pantheon
 
         public override void AutonomousInit()
         {
-            foreach(KeyValuePair<string,IControl> x in storage)
+            SmartWriter.WriteString("Robot Mode", "AutonomousInit", DebugMode.Competition);
+
+            foreach (KeyValuePair<string,IControl> x in storage)
             {
                 x.Value.AutoInit();
             }
@@ -65,6 +72,8 @@ namespace Pantheon
 
         public override void AutonomousPeriodic()
         {
+            SmartWriter.WriteString("Robot Mode", "AutonomousPeriodic", DebugMode.Competition);
+
             foreach (KeyValuePair<string, IControl> x in storage)
             {
                 x.Value.AutoPeriodic();
@@ -73,6 +82,8 @@ namespace Pantheon
 
         public override void TeleopInit()
         {
+            SmartWriter.WriteString("Robot Mode", "TeleopInit", DebugMode.Competition);
+
             foreach (KeyValuePair<string, IControl> x in storage)
             {
                 x.Value.TeleopInit();
@@ -81,6 +92,8 @@ namespace Pantheon
 
         public override void TeleopPeriodic()
         {
+            SmartWriter.WriteString("Robot Mode", "TeleopPeriodic", DebugMode.Competition);
+
             foreach (KeyValuePair<string, IControl> x in storage)
             {
                 x.Value.TeleopPeriodic();
