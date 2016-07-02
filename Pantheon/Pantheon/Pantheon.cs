@@ -1,48 +1,63 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : Pantheon
+// Author           : lazar
+// Created          : 03-26-2016
+//
+// Last Modified By : lazar
+// Last Modified On : 07-01-2016
+// ***********************************************************************
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using WPILib;
 using WPILib.SmartDashboard;
 using WPILib.Extras;
+using Pantheon.RobotDefinitions;
 
 namespace Pantheon
 {
 
+    /// <summary>
+    /// Class Pantheon.
+    /// </summary>
+    /// <seealso cref="WPILib.IterativeRobot" />
     public class Pantheon : IterativeRobot
     {
 
-        IMotor motor;
-        XboxController xbox;
-        IDrive drive;
+        Tim tim;
         Dictionary<string, IControl> storage;
 
+        /// <summary>
+        /// Robot-wide initialization code should go here.
+        /// </summary>
         public override void RobotInit()
         {
             Console.WriteLine(Components.ControlMode.ExternalControl.ToString() );
-
             SmartWriter.WriteString("Robot Mode", "RobotInit", DebugMode.Competition);
 
-            storage = new Dictionary<string, IControl>();
-            xbox = new XboxController(0);
-            
+            storage = new Dictionary<string, IControl>();          
 
             string name = "HERMES";
             name.ToUpper();
 
             if (name == "HERMES")
             {
-                //Create all objects to add
-                motor = new SparkMotor(0, 1, 2, 3);
-                drive = new ArcadeDrive(xbox, motor);
+                tim = new Tim();
 
-
-                //Put all the created objects in the list
-                storage.Add("Motor", motor);
-                storage.Add("Drive", drive);
+                var temp = tim.GetControlObjects();
+                foreach(var x in temp)
+                {
+                    storage.Add(x.Key, x.Value);
+                }
             }
 
         }
 
+        /// <summary>
+        /// Initialization code for disabled mode should go here.
+        /// </summary>
         public override void DisabledInit()
         {
             SmartWriter.WriteString("Robot Mode", "DisabledInit", DebugMode.Competition);
@@ -52,6 +67,9 @@ namespace Pantheon
             }
         }
 
+        /// <summary>
+        /// Periodic code for disabled mode should go here.
+        /// </summary>
         public override void DisabledPeriodic()
         {
             SmartWriter.WriteString("Robot Mode", "DisabledPeriodic", DebugMode.Competition);
@@ -62,6 +80,9 @@ namespace Pantheon
             }
         }
 
+        /// <summary>
+        /// Initialization code for autonomous mode should go here.
+        /// </summary>
         public override void AutonomousInit()
         {
             SmartWriter.WriteString("Robot Mode", "AutonomousInit", DebugMode.Competition);
@@ -72,6 +93,9 @@ namespace Pantheon
             }
         }
 
+        /// <summary>
+        /// Periodic code for autonomous mode should go here.
+        /// </summary>
         public override void AutonomousPeriodic()
         {
             SmartWriter.WriteString("Robot Mode", "AutonomousPeriodic", DebugMode.Competition);
@@ -82,6 +106,9 @@ namespace Pantheon
             }
         }
 
+        /// <summary>
+        /// Initialization for teleop mode should go here.
+        /// </summary>
         public override void TeleopInit()
         {
             SmartWriter.WriteString("Robot Mode", "TeleopInit", DebugMode.Competition);
@@ -92,6 +119,9 @@ namespace Pantheon
             }
         }
 
+        /// <summary>
+        /// Periodic code for teleop mode should go here.
+        /// </summary>
         public override void TeleopPeriodic()
         {
             SmartWriter.WriteString("Robot Mode", "TeleopPeriodic", DebugMode.Competition);
