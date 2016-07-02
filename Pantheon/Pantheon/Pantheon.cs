@@ -14,11 +14,12 @@ namespace Pantheon
         IMotor motor;
         XboxController xbox;
         IDrive drive;
-
         Dictionary<string, IControl> storage;
 
         public override void RobotInit()
         {
+            Console.WriteLine(Components.ControlMode.ExternalControl.ToString() );
+
             SmartWriter.WriteString("Robot Mode", "RobotInit", DebugMode.Competition);
 
             storage = new Dictionary<string, IControl>();
@@ -28,7 +29,7 @@ namespace Pantheon
             string name = "HERMES";
             name.ToUpper();
 
-            if (name.Equals("HERMES".ToUpper()))
+            if (name == "HERMES")
             {
                 //Create all objects to add
                 motor = new SparkMotor(0, 1, 2, 3);
@@ -41,6 +42,7 @@ namespace Pantheon
             }
 
         }
+
         public override void DisabledInit()
         {
             SmartWriter.WriteString("Robot Mode", "DisabledInit", DebugMode.Competition);
