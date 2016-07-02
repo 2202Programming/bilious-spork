@@ -37,21 +37,17 @@ namespace Pantheon
             Console.WriteLine(Components.ControlMode.ExternalControl.ToString() );
             SmartWriter.WriteString("Robot Mode", "RobotInit", DebugMode.Competition);
 
-            storage = new Dictionary<string, IControl>();          
-
             string name = "HERMES";
             name.ToUpper();
 
             if (name == "HERMES")
             {
                 tim = new Tim();
-
-                var temp = tim.GetControlObjects();
-                foreach(var x in temp)
-                {
-                    storage.Add(x.Key, x.Value);
-                }
+                storage = tim.GetControlObjects();
             }
+
+            if (storage == null)
+                storage = new Dictionary<string, IControl>();
 
         }
 
