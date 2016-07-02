@@ -64,24 +64,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pantheon\Components\ControlMode.cs" />
-    <Compile Include="Pantheon\Components\IComponent.cs" />
-    <Compile Include="Pantheon\Components\TimShooter.cs" />
-    <Compile Include="Pantheon\CompressorControl.cs" />
-    <Compile Include="Pantheon\DebugMode.cs" />
-    <Compile Include="Pantheon\Drive\ArcadeDrive.cs" />
-    <Compile Include="Pantheon\Drive\IDrive.cs" />
-    <Compile Include="Pantheon\Drive\MeccanumDrive.cs" />
-    <Compile Include="Pantheon\Drive\TankDrive.cs" />
-    <Compile Include="Pantheon\Global.cs" />
-    <Compile Include="Pantheon\IControl.cs" />
-    <Compile Include="Pantheon\Motor\IMotor.cs" />
-    <Compile Include="Pantheon\Motor\InteruptableMotor.cs" />
-    <Compile Include="Pantheon\Motor\JaguarMotor.cs" />
-    <Compile Include="Pantheon\Motor\MotorMode.cs" />
-    <Compile Include="Pantheon\SmartWriter.cs" />
-    <Compile Include="Pantheon\Motor\SparkMotor.cs" />
-    <Compile Include="Pantheon\Motor\TalonMotor.cs" />
+    <Compile Include="Components\ControlMode.cs" />
+    <Compile Include="Components\IComponent.cs" />
+    <Compile Include="Components\TimShooter.cs" />
+    <Compile Include="CompressorControl.cs" />
+    <Compile Include="DebugMode.cs" />
+    <Compile Include="Drive\ArcadeDrive.cs" />
+    <Compile Include="Drive\IDrive.cs" />
+    <Compile Include="Drive\MeccanumDrive.cs" />
+    <Compile Include="Drive\TankDrive.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="IControl.cs" />
+    <Compile Include="Motor\IMotor.cs" />
+    <Compile Include="Motor\InteruptableMotor.cs" />
+    <Compile Include="Motor\JaguarMotor.cs" />
+    <Compile Include="Motor\MotorMode.cs" />
+    <Compile Include="RobotDefinitions\IDefinition.cs" />
+    <Compile Include="RobotDefinitions\Tim.cs" />
+    <Compile Include="SmartWriter.cs" />
+    <Compile Include="Motor\SparkMotor.cs" />
+    <Compile Include="Motor\TalonMotor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Pantheon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
