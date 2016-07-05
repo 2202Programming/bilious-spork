@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WPILib;
+using Pantheon.Motor;
 
 namespace Pantheon.RobotDefinitions
 {
@@ -57,11 +58,11 @@ namespace Pantheon.RobotDefinitions
         {
             var controlObjects = base.GetControlObjects();
 
-            var motor = new SparkMotor(GetInt("FRONTLEFT"), GetInt("FRONTRIGHT"), GetInt("BACKLEFT"), GetInt("BACKRIGHT"));
-            var drive = new ArcadeDrive(new WPILib.Extras.XboxController(0), motor);
-
-            controlObjects.Add("IMotor", motor);
-            controlObjects.Add("ArcadeDrive", drive);
+            var fl = new SparkMotor(GetInt("FRONTLEFT"));
+            var bl = new SparkMotor(GetInt("BACKLEFT"));
+            var fr = new SparkMotor(GetInt("FRONTRIGHT"));
+            var br = new SparkMotor(GetInt("BACKRIGHT"));
+            var motorSet = new DriveMotorSet(br, bl, fl, fr);                       
 
             return controlObjects;
         }
