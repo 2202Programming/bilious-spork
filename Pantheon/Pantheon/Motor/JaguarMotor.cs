@@ -13,81 +13,31 @@ namespace Pantheon
     using WPILib;
 
 
-    public class JaguarMotor : InteruptableMotor
+    public class JaguarMotor : IMotor
 	{
-		private Jaguar BackLeft
-		{
-			get;
-			set;
-		}
-
-		private Jaguar BackRight
-		{
-			get;
-			set;
-		}
-
-		private Jaguar FrontRight
-		{
-			get;
-			set;
-		}
-
-		private Jaguar FrontLeft
-		{
-			get;
-			set;
-		}
-
-        public JaguarMotor(int FL, int BL, int BR, int FR)
+        private Jaguar motor;
+        public override bool Inverted
         {
-            FrontRight = new Jaguar(FR);
-            FrontLeft = new Jaguar(FL);
+            get
+            {
+                return motor.Inverted;
+            }
 
-            BackRight = new Jaguar(BR);
-            BackLeft = new Jaguar(BL);
+            set
+            {
+                motor.Inverted = value;
+            }
         }
 
-		public override void AutoInit()
-		{
-			throw new System.NotImplementedException();
-		}
+        public JaguarMotor(int port)
+        {
+            motor = new Jaguar(port);
+        }
 
-		public override void AutoPeriodic()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void DisabledInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void Set(double left, double right)
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void Stop()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void TeleopInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void TeleopPeriodic()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public override void RobotInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
-	}
+        protected override void Apply()
+        {
+            motor.Set(SetValue);
+        }
+    }
 }
 

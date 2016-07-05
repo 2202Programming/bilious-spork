@@ -14,109 +14,31 @@ namespace Pantheon
     using WPILib;
 
 
-    public class TalonMotor : InteruptableMotor
+    public class TalonMotor : IMotor
 	{
-		private Talon BackLeft
-		{
-			get;
-			set;
-		}
-
-		private Talon BackRight
-		{
-			get;
-			set;
-		}
-
-		private Talon FrontLeft
-		{
-			get;
-			set;
-		}
-
-		private Talon FrontRight
-		{
-			get;
-			set;
-		}
-
-        public TalonMotor(int FR, int FL, int BL, int BR)
+        private Talon motor;
+        public override bool Inverted
         {
-            mode = MotorMode.Stopped;
+            get
+            {
+                return motor.Inverted;
+            }
 
-
-
-            BackLeft = new Talon(BL);
-            BackRight = new Talon(BR);
-            FrontLeft = new Talon(FL);
-            FrontRight = new Talon(FR);
+            set
+            {
+                motor.Inverted = value;
+            }
         }
 
-		public override void Set(double left, double right)
-		{
-            LeftSet = left;
-            RightSet = right;
-		}
-
-		public override void Stop()
-		{
-            LeftSet = 0.0;
-            RightSet = 0.0;
-		}
-
-		public override void AutoInit()
-		{
-            LeftSet = 0.0;
-            RightSet = 0.0;
-
-            LeftExterior = 0.0;
-            RightExterior = 0.0;
-
-            mode = MotorMode.Auto;
-            Update();
-        }
-
-        public override void AutoPeriodic()
-		{
-            Update();
-            Drive();
-		}
-
-		public override void DisabledInit()
-		{
-            mode = MotorMode.Stopped;
-            Update();
-        }
-
-		public override void TeleopInit()
-		{
-            mode = MotorMode.UserControl;
-            Update();
-		}
-
-		public override void TeleopPeriodic()
-		{
-            Update();
-            Drive();
-		}
-
-		public override void RobotInit()
-		{
-            mode = MotorMode.Stopped;
-            Update();
-		}
-
-        public void Drive()
+        public TalonMotor(int port)
         {
-            BackLeft.Set(LeftSet);
-            FrontLeft.Set(LeftSet);
-
-            BackRight.Set(RightSet);
-            FrontRight.Set(RightSet);
-            
-            SmartWriter.WriteNumber("Left Set", LeftSet, Global.DMode);
-            SmartWriter.WriteNumber("Right Set", RightSet, Global.DMode);
+            motor = new Talon(port);
         }
-	}
+
+        protected override void Apply()
+        {
+            motor.Set(SetValue);
+        }
+    }
 }
 

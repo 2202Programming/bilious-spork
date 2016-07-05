@@ -69,14 +69,10 @@
     <Compile Include="Components\TimShooter.cs" />
     <Compile Include="CompressorControl.cs" />
     <Compile Include="DebugMode.cs" />
-    <Compile Include="Drive\ArcadeDrive.cs" />
-    <Compile Include="Drive\IDrive.cs" />
-    <Compile Include="Drive\MeccanumDrive.cs" />
-    <Compile Include="Drive\TankDrive.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="IControl.cs" />
+    <Compile Include="Motor\DriveMotorSet.cs" />
     <Compile Include="Motor\IMotor.cs" />
-    <Compile Include="Motor\InteruptableMotor.cs" />
     <Compile Include="Motor\JaguarMotor.cs" />
     <Compile Include="Motor\MotorMode.cs" />
     <Compile Include="RobotDefinitions\IDefinition.cs" />
@@ -91,7 +87,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Drive\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -11,19 +11,50 @@ namespace Pantheon
 	using System.Linq;
 	using System.Text;
 
-	public class IMotor : IControl
+	public abstract class IMotor : IControl
 	{
+        protected double SetValue;
+        protected MotorMode mMode = MotorMode.Stopped;
 
-		public virtual void Set(double right, double left)
-		{
-			throw new System.NotImplementedException();
-		}
+        public abstract bool Inverted { get; set; }
 
-		public virtual void Stop()
-		{
-			throw new System.NotImplementedException();
-		}
+        protected abstract void Apply();
+                
 
-	}
+        public void Set(double set)
+        {
+            SetValue = set;
+        }
+
+        public override void AutoInit()
+        {
+            Set(0.0f);
+            Apply();
+            mMode = MotorMode.UserControl;
+        }
+
+        public override void AutoPeriodic()
+        {
+            Apply();
+        }
+
+        public override void TeleopInit()
+        {
+            Set(0.0f);
+            Apply();
+            mMode = MotorMode.UserControl;
+        }
+
+        public override void TeleopPeriodic()
+        {
+            Apply();
+        }
+
+        public override void DisabledInit()
+        {
+            Apply();
+            mMode = MotorMode.Stopped;
+        }
+    }
 }
 

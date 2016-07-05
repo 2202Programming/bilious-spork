@@ -13,111 +13,30 @@ namespace Pantheon
     using WPILib;
 
 
-    public class SparkMotor : InteruptableMotor
+    public class SparkMotor : IMotor
 	{
-		private Spark FrontLeft
-		{
-			get;
-			set;
-		}
-
-		private Spark FrontRight
-		{
-			get;
-			set;
-		}
-
-		private Spark BackLeft
-		{
-			get;
-			set;
-		}
-
-		private Spark BackRight
-		{
-			get;
-			set;
-		}
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="FL">Front Left Motor</param>
-        /// <param name="FR"></param>
-        /// <param name="BR"></param>
-        /// <param name="BL"></param>
-        public SparkMotor(int FL, int FR, int BR, int BL)
+        private Spark motor;
+        public override bool Inverted
         {
-            FrontLeft = new Spark(FL);
-            BackLeft = new Spark(BL);
-            BackRight = new Spark(BR);
-            FrontRight = new Spark(FR);
+            get
+            {
+                return motor.Inverted;
+            }
 
-            FrontLeft.Inverted = true;
-            BackLeft.Inverted = true;
-
-            mode = MotorMode.Stopped;
-            Update();
+            set
+            {
+                motor.Inverted = value;
+            }
         }
 
-        public override void Set(double left, double right)
+        public SparkMotor(int port)
         {
-            LeftSet = left;
-            RightSet = right;
+            motor = new Spark(port);            
         }
 
-        public override void Stop()
+        protected override void Apply()
         {
-            LeftSet = 0.0;
-            RightSet = 0.0;
-        }
-
-        public override void AutoInit()
-        {
-            LeftSet = 0.0;
-            RightSet = 0.0;
-
-            LeftExterior = 0.0;
-            RightExterior = 0.0;
-
-            mode = MotorMode.Auto;
-            Update();
-        }
-
-        public override void AutoPeriodic()
-        {
-            Update();
-            Drive();
-        }
-
-        public override void DisabledInit()
-        {
-            mode = MotorMode.Stopped;
-            Update();
-        }
-
-        public override void TeleopInit()
-        {
-            mode = MotorMode.UserControl;
-            Update();
-        }
-
-        public override void TeleopPeriodic()
-        {
-            Update();
-            Drive();
-        }
-
-        public void Drive()
-        {
-            BackLeft.Set(LeftSet);
-            FrontLeft.Set(LeftSet);
-
-            BackRight.Set(RightSet);
-            FrontRight.Set(RightSet);
-
-            SmartWriter.WriteNumber("Left Set", LeftSet, DebugMode.Full);
-            SmartWriter.WriteNumber("Right Set", RightSet, DebugMode.Full);
+            motor.Set(SetValue);
         }
     }
 }

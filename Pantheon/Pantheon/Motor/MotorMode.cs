@@ -15,7 +15,6 @@ namespace Pantheon
 
     public enum MotorMode : int
 	{
-		Auto,
 		Stopped,
 		UserControl,
 	}

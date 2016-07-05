@@ -56,12 +56,9 @@ namespace Pantheon.RobotDefinitions
         public override Dictionary<string, IControl> GetControlObjects()
         {
             var controlObjects = base.GetControlObjects();
+            
 
-            var motor = new SparkMotor(GetInt("FRONTLEFT"), GetInt("FRONTRIGHT"), GetInt("BACKLEFT"), GetInt("BACKRIGHT"));
-            var drive = new ArcadeDrive(new WPILib.Extras.XboxController(0), motor);
-
-            controlObjects.Add("IMotor", motor);
-            controlObjects.Add("ArcadeDrive", drive);
+            
 
             return controlObjects;
         }

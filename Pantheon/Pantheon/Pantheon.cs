@@ -10,10 +10,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using WPILib;
-using WPILib.SmartDashboard;
-using WPILib.Extras;
 using Pantheon.RobotDefinitions;
 
 namespace Pantheon
