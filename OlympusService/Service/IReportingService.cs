@@ -13,5 +13,7 @@ namespace Service
     {
         [OperationContract]
         void DoWork();
+
+
     }
 }
