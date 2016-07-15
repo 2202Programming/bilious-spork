@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Robots>
+  <DEFAULT>
+    <data key="NAME" value="DEFAULT" />
+  </DEFAULT>
+  <TIM>
+    <name>TIM</name>
+    <FRONTLEFT>1</FRONTLEFT>
+  </TIM>
+</Robots>

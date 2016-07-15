@@ -15,18 +15,19 @@ using System.Threading.Tasks;
 using WPILib;
 using WPILib.SmartDashboard;
 using WPILib.Extras;
+using System.Xml;
 
 namespace Pantheon.RobotDefinitions
 {
     /// <summary>
     /// Class IDefinition. Base class for any robot definition
     /// </summary>
-    public class IDefinition
+    public class IDefinition 
     {
         #region Fields
 
         protected Dictionary<string, string> _properties;
-        protected bool _useXMLBag = false;
+        protected bool _useXMLBag = true;
         private string _name;
 
         #endregion
@@ -89,9 +90,9 @@ namespace Pantheon.RobotDefinitions
             {
                 return int.Parse(GetValue(key));
             }
-            catch
+            catch //TODO have seperate exceptions for not found as well as parse error
             {
-                return -999;
+                throw new Exception("Int Not Found in Dictionary");
             }
         }
 
@@ -108,7 +109,7 @@ namespace Pantheon.RobotDefinitions
             }
             catch
             {
-                return -999.9f;
+                throw new Exception("Value Not found in Dictionary");
             }
         }
 

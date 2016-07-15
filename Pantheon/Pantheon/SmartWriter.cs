@@ -23,6 +23,8 @@ namespace Pantheon
             {
                 SmartDashboard.PutString(label, value);
                 if (Global.DisplayConsoleOutput) Console.WriteLine(label + " : " + value);
+
+                
             }
         }
 

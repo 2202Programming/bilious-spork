@@ -58,11 +58,18 @@ namespace Pantheon.RobotDefinitions
         {
             var controlObjects = base.GetControlObjects();
 
-            var fl = new SparkMotor(GetInt("FRONTLEFT"));
-            var bl = new SparkMotor(GetInt("BACKLEFT"));
-            var fr = new SparkMotor(GetInt("FRONTRIGHT"));
-            var br = new SparkMotor(GetInt("BACKRIGHT"));
-            var motorSet = new DriveMotorSet(br, bl, fl, fr);                       
+            try
+            {
+                var fl = new SparkMotor(GetInt("FRONTLEFT"));
+                var bl = new SparkMotor(GetInt("BACKLEFT"));
+                var fr = new SparkMotor(GetInt("FRONTRIGHT"));
+                var br = new SparkMotor(GetInt("BACKRIGHT"));
+                var motorSet = new DriveMotorSet(br, bl, fl, fr);
+            }
+            catch (Exception ex)
+            {
+               Console.WriteLine("Error Loading Control List see inner exception");
+            }
 
             return controlObjects;
         }
