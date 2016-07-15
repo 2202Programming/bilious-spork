@@ -22,7 +22,7 @@ namespace Pantheon.RobotDefinitions
     /// <summary>
     /// Class IDefinition. Base class for any robot definition
     /// </summary>
-    public class IDefinition
+    public class IDefinition 
     {
         #region Fields
 
@@ -90,7 +90,7 @@ namespace Pantheon.RobotDefinitions
             {
                 return int.Parse(GetValue(key));
             }
-            catch
+            catch //TODO have seperate exceptions for not found as well as parse error
             {
                 throw new Exception("Int Not Found in Dictionary");
             }
