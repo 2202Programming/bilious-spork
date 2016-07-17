@@ -27,7 +27,7 @@ namespace Pantheon.RobotDefinitions
         #region Fields
 
         protected Dictionary<string, string> _properties;
-        protected bool _useXMLBag = true;
+        protected bool _useXMLBag = false;
         private string _name;
 
         #endregion
