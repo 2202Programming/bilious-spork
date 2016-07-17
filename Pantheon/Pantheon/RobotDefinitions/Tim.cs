@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using WPILib;
 using Pantheon.Motor;
+using Pantheon.Drive;
 
 namespace Pantheon.RobotDefinitions
 {
@@ -64,13 +65,18 @@ namespace Pantheon.RobotDefinitions
                 var bl = new SparkMotor(GetInt("BACKLEFT"));
                 var fr = new SparkMotor(GetInt("FRONTRIGHT"));
                 var br = new SparkMotor(GetInt("BACKRIGHT"));
-                var motorSet = new DriveMotorSet(br, bl, fl, fr);
+                var arcadeDrive = new ArcadeDrive(fl, fr, bl, br, new WPILib.Extras.XboxController(0));
+
+                controlObjects.Add("Front Left Motor", fl);
+                controlObjects.Add("Back Left Motor", bl);
+                controlObjects.Add("Front Right Motor", fr);
+                controlObjects.Add("Back Right Motor", br);
+                controlObjects.Add("Arcade Drive", arcadeDrive);
             }
             catch (Exception ex)
             {
-               Console.WriteLine("Error Loading Control List see inner exception");
+               Console.WriteLine("Error Loading Control List see inner exception: {0}", ex.Message);
             }
-
             return controlObjects;
         }
     }

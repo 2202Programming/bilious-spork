@@ -18,7 +18,7 @@ namespace Pantheon.Motor
     /// Class DriveMotorSet.
     /// </summary>
     /// <seealso cref="Pantheon.IControl" />
-    class DriveMotorSet : IControl
+    public class DriveMotorSet : IControl
     {
         private IMotor backRight;
         private IMotor backLeft;

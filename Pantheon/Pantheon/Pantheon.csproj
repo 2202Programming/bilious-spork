@@ -71,6 +71,7 @@
     <Compile Include="Components\TimShooter.cs" />
     <Compile Include="CompressorControl.cs" />
     <Compile Include="DebugMode.cs" />
+    <Compile Include="Drive\ArcadeDrive.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="IControl.cs" />
     <Compile Include="Motor\DriveMotorSet.cs" />
@@ -90,9 +91,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Drive\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="RobotDefinitions\DebugXMLBag.xml" />
   </ItemGroup>
