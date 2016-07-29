@@ -1,2 +1,4 @@
 language: csharp
-solution: Pantheon/Pantheon.sln
+solution: 
+    - Pantheon/Robot/Pantheon.sln
+    - Pantheon/Service/Olympus
