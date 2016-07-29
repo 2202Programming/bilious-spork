@@ -1,4 +1,4 @@
 language: csharp
-solution: 
-    - Pantheon/Robot/Pantheon.sln
-    - Pantheon/Service/Olympus
+script: 
+    - xbuild /p:Configuration=Release Pantheon/Robot/Pantheon.sln
+    - xbuild /p:Configuration=Release Pantheon/Service/Olympus
