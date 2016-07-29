@@ -45,7 +45,7 @@ namespace Pantheon.Olympus.Services
         /// <value>
         /// The smart data.
         /// </value>
-        [DataMember]
-        SmartData SmartData { get; set; }
+        [OperationContract]
+        SmartData GetSmartData();
     }
 }

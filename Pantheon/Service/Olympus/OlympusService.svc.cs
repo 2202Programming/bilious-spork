@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.ServiceModel;
-using Olympus;
 using Pantheon.Olympus.Services;
 using Pantheon.Service.Contract.Enums;
 using Pantheon.Service.Contract.Objects;
@@ -50,12 +49,17 @@ namespace Pantheon.Olympus
                 SmartData.RobotMode = mode;
         }
 
+        public SmartData GetSmartData()
+        {
+            return SmartData;
+        }
+
         /// <summary>
         /// Gets or sets the smart data.
         /// </summary>
         /// <value>
         /// The smart data.
         /// </value>
-        public SmartData SmartData { get; set; }
+        private SmartData SmartData { get; set; } = new SmartData();
     }
 }
