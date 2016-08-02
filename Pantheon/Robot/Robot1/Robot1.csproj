@@ -10,12 +10,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AD746C0E-9CC1-4355-AEA4-35966FF5C783}</ProjectGuid>
+    <ProjectGuid>{0DBA104D-2516-4A94-BD75-F726C891B459}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pantheon</RootNamespace>
-    <AssemblyName>Pantheon</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>Robot1</RootNamespace>
+    <AssemblyName>Robot1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -35,61 +35,23 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Pantheon.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HAL, Version=2016.0.0.259, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FRC.WPILib.Extras.2016.0.0.259\lib\net45\HAL.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WPILib, Version=2016.0.0.259, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FRC.WPILib.2016.0.0.259\lib\net45\WPILib.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WPILib.Extras, Version=2016.0.0.259, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FRC.WPILib.Extras.2016.0.0.259\lib\net45\WPILib.Extras.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\ControlMode.cs" />
-    <Compile Include="Components\IComponent.cs" />
-    <Compile Include="Components\TimShooter.cs" />
-    <Compile Include="CompressorControl.cs" />
-    <Compile Include="DebugMode.cs" />
-    <Compile Include="Drive\ArcadeDrive.cs" />
-    <Compile Include="Global.cs" />
-    <Compile Include="IControl.cs" />
-    <Compile Include="Motor\DriveMotorSet.cs" />
-    <Compile Include="Motor\IMotor.cs" />
-    <Compile Include="Motor\JaguarMotor.cs" />
-    <Compile Include="Motor\MotorMode.cs" />
-    <Compile Include="RobotDefinitions\IDefinition.cs" />
-    <Compile Include="RobotDefinitions\Tim.cs" />
-    <Compile Include="SmartWriter.cs" />
-    <Compile Include="Motor\SparkMotor.cs" />
-    <Compile Include="Motor\TalonMotor.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Pantheon.cs" />
+    <Compile Include="Robot1.cs" />
+    <Compile Include="RobotMap.cs" />
+    <Compile Include="Subsystems\ExampleSubsystem.cs" />
+    <Compile Include="Commands\ExampleCommand.cs" />
+    <Compile Include="Commands\ExampleAutonomousCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="RobotDefinitions\DebugXMLBag.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
