@@ -80,6 +80,11 @@
     <Compile Include="Motor\MotorMode.cs" />
     <Compile Include="RobotDefinitions\IDefinition.cs" />
     <Compile Include="RobotDefinitions\Tim.cs" />
+    <Compile Include="Service References\Services\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="SmartWriter.cs" />
     <Compile Include="Motor\SparkMotor.cs" />
     <Compile Include="Motor\TalonMotor.cs" />
@@ -90,10 +95,31 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Service References\Services\ReportingService.wsdl" />
+    <None Include="Service References\Services\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Services\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Services\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="RobotDefinitions\DebugXMLBag.xml" />
+    <None Include="Service References\Services\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Services\configuration.svcinfo" />
+    <None Include="Service References\Services\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
