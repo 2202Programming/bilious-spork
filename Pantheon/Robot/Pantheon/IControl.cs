@@ -4,53 +4,46 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Pantheon
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-
     /// <summary>
-    /// I can even define my own documentation that will show up in the object browser
+    /// Template class for all robot Control objects that are contained in 
     /// </summary>
-	public class IControl
-	{
-		public virtual void TeleopInit()
-		{
-			 
-		}
+    public abstract class IControl
+    {
+        /// <summary>
+        /// Method to run during the Telerop Initialization phase of the match.
+        /// </summary>
+        public virtual void TeleopInit() { }
 
-		public virtual void TeleopPeriodic()
-		{
-			 
-		}
+        /// <summary>
+        /// Called every cycle during the teleoperated periodic phase.
+        /// </summary>
+        public virtual void TeleopPeriodic() { }
 
-		public virtual void AutoInit()
-		{
-			 
-		}
+        /// <summary>
+        /// Method to run during the Autonomous Initilization phase of the match.
+        /// </summary>
+        public virtual void AutoInit() { }
 
-		public virtual void AutoPeriodic()
-		{
-			 
-		}
+        /// <summary>
+        /// Called every cycle during the Autonomous periodic phase.
+        /// </summary>
+        public virtual void AutoPeriodic() { }
 
-		public virtual void DisabledInit()
-		{
-			 
-		}
+        /// <summary>
+        /// Called at the end of every phase.
+        /// </summary>
+        public virtual void DisabledInit() { }
 
-        public virtual void DisabledPeriodic()
-        {
- 
-        }
-
-
-        public virtual void RobotInit()
-		{
-		}
-
-	}
+        /// <summary>
+        /// Called every cycle the robot is diabled.
+        /// </summary>
+        public virtual void DisabledPeriodic() { }
+    }
 }
 

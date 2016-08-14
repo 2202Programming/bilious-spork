@@ -4,48 +4,63 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using Olympus;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using WPILib;
+using WPILib.SmartDashboard;
+using Pantheon.ServiceReference1;
+
 namespace Pantheon
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-    using WPILib;
-    using WPILib.SmartDashboard;
+    public class SmartWriter
+    {
+        private static ReporterClient _reporterInstance;
 
-	public class SmartWriter
-	{
+        public static ReporterClient ReporterInstance
+        {
+            get
+            {
+                if (_reporterInstance == null)
+                    _reporterInstance = new ReporterClient();
 
+                return _reporterInstance;
+            }
+        }
 
-		public static void WriteString(string label, string value, DebugMode Debug)
-		{
+        public static void WriteString(string label, string value, DebugMode Debug)
+        {
             if (Global.DMode >= Debug)
             {
                 SmartDashboard.PutString(label, value);
                 if (Global.DisplayConsoleOutput) Console.WriteLine(label + " : " + value);
-
-                
             }
+
+            ReporterInstance.ReportData(label, value);
         }
 
-		public static void WriteBool(string label, bool value, DebugMode Debug)
-		{
-			if(Global.DMode >= Debug)
+        public static void WriteBool(string label, bool value, DebugMode Debug)
+        {
+            if (Global.DMode >= Debug)
             {
                 SmartDashboard.PutBoolean(label, value);
                 if (Global.DisplayConsoleOutput) Console.WriteLine(label + " : " + value);
             }
+            ReporterInstance.ReportData(label, value.ToString());
         }
 
-		public static void WriteNumber(string label, double value, DebugMode Debug)
-		{
+        public static void WriteNumber(string label, double value, DebugMode Debug)
+        {
             if (Global.DMode >= Debug)
             {
                 SmartDashboard.PutNumber(label, value);
                 if (Global.DisplayConsoleOutput) Console.WriteLine(label + " : " + value);
             }
+            ReporterInstance.ReportData(label, value.ToString());
         }
 
-	}
+    }
 }
 

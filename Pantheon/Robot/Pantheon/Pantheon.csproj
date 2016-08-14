@@ -80,7 +80,7 @@
     <Compile Include="Motor\MotorMode.cs" />
     <Compile Include="RobotDefinitions\IDefinition.cs" />
     <Compile Include="RobotDefinitions\Tim.cs" />
-    <Compile Include="Service References\Services\Reference.cs">
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -95,31 +95,38 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Service References\Services\ReportingService.wsdl" />
-    <None Include="Service References\Services\Service.xsd">
+    <None Include="Service References\ServiceReference1\hello.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Services\Service1.xsd">
+    <None Include="Service References\ServiceReference1\hello1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Services\Service2.xsd">
+    <None Include="Service References\ServiceReference1\hello2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference1\SmartReporter.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RobotDefinitions\DebugXMLBag.xml" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\hello.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Olympus\Olympus.csproj">
+      <Project>{3b9a4154-da72-4b17-b6e8-512df6aa4d2e}</Project>
+      <Name>Olympus</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RobotDefinitions\DebugXMLBag.xml" />
-    <None Include="Service References\Services\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\Services\configuration.svcinfo" />
-    <None Include="Service References\Services\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\Services\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

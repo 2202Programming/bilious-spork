@@ -44,11 +44,6 @@ namespace Pantheon
 			throw new System.NotImplementedException();
 		}
 
-		public override void RobotInit()
-		{
-			throw new System.NotImplementedException();
-		}
-
 		public CompressorControl()
 		{
 		}
