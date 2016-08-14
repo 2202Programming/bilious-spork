@@ -1,6 +1,0 @@
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\bin\Debug\Olympus.dll.config
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\bin\Debug\Olympus.dll
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\bin\Debug\Olympus.pdb
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\obj\Debug\Olympus.csprojResolveAssemblyReference.cache
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\obj\Debug\Olympus.dll
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\obj\Debug\Olympus.pdb

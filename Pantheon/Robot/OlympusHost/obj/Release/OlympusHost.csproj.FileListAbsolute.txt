@@ -1,8 +1,0 @@
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\bin\Release\OlympusHost.exe.config
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\bin\Release\OlympusHost.exe
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\bin\Release\OlympusHost.pdb
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\bin\Release\Olympus.dll
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\bin\Release\Olympus.pdb
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\obj\Release\OlympusHost.csprojResolveAssemblyReference.cache
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\obj\Release\OlympusHost.exe
-C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\OlympusHost\obj\Release\OlympusHost.pdb
