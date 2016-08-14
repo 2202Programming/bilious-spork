@@ -1,0 +1,14 @@
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\Pantheon.exe.config
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\Pantheon.exe
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\Pantheon.pdb
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\HAL.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\NetworkTables.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\WPILib.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\WPILib.Extras.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\HAL.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\NetworkTables.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\WPILib.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Release\WPILib.Extras.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\obj\Release\Pantheon.csprojResolveAssemblyReference.cache
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\obj\Release\Pantheon.exe
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\obj\Release\Pantheon.pdb

@@ -1,0 +1,16 @@
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\Pantheon.exe.config
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\Pantheon.exe
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\Pantheon.pdb
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\HAL.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\NetworkTables.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\WPILib.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\WPILib.Extras.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\HAL.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\NetworkTables.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\WPILib.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\WPILib.Extras.xml
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\obj\Debug\Pantheon.csprojResolveAssemblyReference.cache
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\obj\Debug\Pantheon.exe
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\obj\Debug\Pantheon.pdb
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\Olympus.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Pantheon\bin\Debug\Olympus.pdb

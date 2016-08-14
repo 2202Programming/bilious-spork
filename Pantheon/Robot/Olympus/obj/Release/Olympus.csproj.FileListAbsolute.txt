@@ -1,0 +1,5 @@
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\bin\Release\Olympus.dll.config
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\bin\Release\Olympus.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\bin\Release\Olympus.pdb
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\obj\Release\Olympus.dll
+C:\Users\lazar\OneDrive\Documents\Programming\Workspace\bilious-spork\Pantheon\Robot\Olympus\obj\Release\Olympus.pdb
