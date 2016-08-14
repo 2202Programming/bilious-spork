@@ -117,12 +117,6 @@
     <None Include="Service References\ServiceReference1\hello.disco" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Olympus\Olympus.csproj">
-      <Project>{3b9a4154-da72-4b17-b6e8-512df6aa4d2e}</Project>
-      <Name>Olympus</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
