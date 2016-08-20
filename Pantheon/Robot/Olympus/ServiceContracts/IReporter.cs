@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ServiceModel;
 
-namespace Olympus
+namespace Olympus.ServiceContracts
 {
     [ServiceContract]
     public interface IReporter

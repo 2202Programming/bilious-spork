@@ -1,4 +1,4 @@
-﻿using Olympus;
+﻿using Olympus.ServiceRealizations;
 using System;
 using System.ServiceModel;
 using System.ServiceModel.Description;

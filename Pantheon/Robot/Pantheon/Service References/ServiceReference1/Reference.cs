@@ -38,9 +38,11 @@ namespace Pantheon.ServiceReference1 {
     public interface IReporterChannel : ServiceReference1.IReporter, System.ServiceModel.IClientChannel {
     }
     
+
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ReporterClient : System.ServiceModel.ClientBase<ServiceReference1.IReporter>, ServiceReference1.IReporter {
+    public partial class ReporterClient : System.ServiceModel.ClientBase<IReporter>, ServiceReference1.IReporter {
         
         public ReporterClient() {
         }
