@@ -1,4 +1,5 @@
 language: csharp
 solution: Pantheon/Robot/Pantheon.sln
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash < (curl -s https://codecov.io/bash)
+  - codecov
